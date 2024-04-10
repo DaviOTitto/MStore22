@@ -1,0 +1,157 @@
+body {
+	padding-top: 50px;
+	padding-bottom: 40px;
+	color: #5a5a5a;
+}
+
+.container-cabec {
+	width: 100%;
+	padding: 10px 0px;
+	text-align: center;
+}
+.progress-bar {
+  background-color: #6db33f;
+  height: 20px;
+}
+.row-cabec {
+	padding: 10px 10px;
+	background-color: #DCDCDC;
+	border: thick outset silver;
+	border-radius: 10px;
+	width: 95%;
+	display: inline-flex;
+	justify-content: space-between;
+}
+
+#subtitulo-pagina {
+	vertical-align: text-bottom;
+}
+
+#img-cliente {
+	margin-left: 0;
+	margin-right: auto;
+}
+#img-tam{
+	height:50px;
+	width: 50px;
+}
+#img-cecotein {
+	margin-right: 0;
+	margin-left: auto;
+}
+
+#numero-tela {
+	text-align: center;
+	font-weight: bold;
+	position: relative;
+	top: 95px;
+	right: -1px;
+}
+	
+.container-cabec p {
+	height: 0;
+	margin: 0;
+	color: black;
+	font-size: 12px;
+}
+
+/* Modal venda_form */
+
+#tab-venda-form {
+	text-align: center;
+	font-weight: bold;
+}
+
+#imagemThumb {
+	width: 25px;
+	height: 25px;
+}
+
+/* Página de nova venda - CLIENTE */
+
+#form-inline-nova-venda {
+	margin-bottom: 20px;
+	position: relative
+}
+
+#form-inline-nova-venda i {
+	position: absolute;
+	left: 420px;
+	top: 30px;
+}
+
+/* Página de nova venda - PRODUTO */
+
+.form-group input {
+	width: auto;
+}
+
+.form-inline-nova-venda {
+	display: inline-block;	
+}
+
+.btn {
+	margin-top: 21px;
+}
+
+#add-item {
+	margin-top: 20px;
+}
+
+#tabela-produto {
+	margin-top: 20px;
+}
+
+/* Modal - modal_cliente.html */
+
+h3 {
+	display: inline-flex;
+}
+
+#fechar-modal {
+	margin-top: 7px;
+}
+
+#labelCliente {
+	font-weight: normal;
+}
+
+#btnPesquisar {
+	display: inline-block;
+	width: auto;
+	vertical-align: middle;
+}
+
+#search-box-cliente, #search-box-produto, #search-box-especie {
+	display: inline-block;
+	width: auto;
+	vertical-align: middle;
+}
+
+#btn_importar_cliente, #btn_importar_produto, #btn_importar_especie {
+	margin-top: 0px;
+}
+
+#tabela-cliente {
+	margin-top: 20px;
+}
+
+/* Listar Vendas */
+
+#new_sale, #btnFiltro {
+	margin-top: 0px;
+	margin-right: 20px;
+}
+
+#data_inicial {
+	margin-right: 10px;
+}
+
+#btnFiltrarDatas {
+	margin-top: 0px;
+	margin-right: 10px;
+}
+
+#btnFiltrarNome {
+	margin-top: 0px;
+}

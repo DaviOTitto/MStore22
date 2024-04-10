@@ -1,0 +1,572 @@
+{% load bootstrap %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="shortcut icon" href="{% static 'img/cart.png' %}">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <meta name="robots" content="index,follow">
+
+
+  <title>M Store Moda Plus - Contato</title>
+  <meta name="description" content="">
+
+  <meta property="og:title" content="M Store Moda Plus - Contato">
+  <meta property="og:description" content="">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:type" content="website">
+
+
+  <link href='//fonts.googleapis.com/css?family=Open Sans:400,600,700|Lato:400,700|Lato:400,700|Lato:400,700'
+    rel='stylesheet' type='text/css'>
+    {% block css %}
+  <style type="text/css">
+    .get-in-touch {
+      max-width: 600px;
+      margin: 50px auto;
+      position: relative;
+      left: 250px;
+      top: -170px;
+    }
+
+    .get-in-touch .title {
+      text-align: right;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 3.2em;
+      line-height: 48px;
+      padding-bottom: 48px;
+      color: #5543ca;
+      background: #5543ca;
+      background: -moz-linear-gradient(left, #33b8fa 0%, #1d3bc3 100%) !important;
+      background: -webkit-linear-gradient(left, #33b8fa 0%, #1d3bc3 100%) !important;
+      background: linear-gradient(to right, #33b8fa 0%, #1d3bc3 100%) !important;
+      -webkit-background-clip: text !important;
+      -webkit-text-fill-color: transparent !important;
+    }
+
+    .contact-form .form-field {
+      position: relative;
+      margin: 32px 0;
+    }
+
+    .contact-form .input-text {
+      display: block;
+      width: 100%;
+      height: 36px;
+      border-width: 0 0 2px 0;
+      border-color: #2e13e2;
+      font-size: 18px;
+      line-height: 26px;
+      font-weight: 400;
+    }
+
+    .contact-form .input-text:focus {
+      outline: none;
+    }
+
+    .contact-form .input-text:focus+.label,
+    .contact-form .input-text.not-empty+.label {
+      -webkit-transform: translateY(-24px);
+      transform: translateY(-24px);
+    }
+
+    .contact-form .label {
+      position: absolute;
+      left: 20px;
+      bottom: 11px;
+      font-size: 18px;
+      line-height: 16px;
+      font-weight: 400;
+      color: #161aea;
+      cursor: text;
+      transition: -webkit-transform .2s ease-in-out;
+      transition: transform .2s ease-in-out;
+      transition: transform .2s ease-in-out,
+        -webkit-transform .2s ease-in-out;
+    }
+
+    .contact-form .submit-btn {
+      display: inline-block;
+      background-color: #000;
+      background-image: linear-gradient(125deg, #009dff, #064497);
+      color: #fff;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 16px;
+      padding: 8px 16px;
+      border: none;
+      width: 200px;
+      cursor: pointer;
+    }
+
+    .cs-section[id="188cc1c0-c8a5-4287-8817-a20a82a9ead2"] {
+      min-height: 734.062px;
+    }
+
+    .cs-section[id="188cc1c0-c8a5-4287-8817-a20a82a9ead2"] .cs-section-inner {
+      min-height: 734.062px;
+      background-color: #e6b8af;
+    }
+
+    .cs-section[id="f549097a-23dd-4bc9-a5fa-babee6f90093"] {
+      min-height: 426px;
+    }
+
+    .cs-section[id="f549097a-23dd-4bc9-a5fa-babee6f90093"] .cs-section-inner {
+      min-height: 426px;
+      background-color: rgba(255, 255, 255, 0);
+    }
+
+    .cs-section[id="c9955e14-ed33-424d-8c25-b441e7f04826"] {
+      min-height: 224px;
+    }
+
+    .cs-section[id="c9955e14-ed33-424d-8c25-b441e7f04826"] .cs-section-inner {
+      min-height: 224px;
+      background-image: url(https://yata.s3-object.locaweb.com.br/89c220f8e690901231a4812061058ce22950ac34dbe6accf4350cee7a05abe8b);
+      background-size: auto auto;
+      background-repeat: repeat;
+      background-position: center top;
+      background-attachment: fixed;
+    }
+
+    .cs-box[id="30ed6498-9971-4d03-b502-d21cef34276c"] {
+      flex-grow: 1;
+    }
+
+    .cs-box[id="d919bcab-f3aa-47d0-9360-c3599af4c70e"] {
+      flex-grow: 1;
+    }
+
+    .cs-box[id="6c88374b-ea94-481b-bf0e-93c0124f7aed"] {
+      flex-grow: 1;
+    }
+
+    .cs-box[id="10370684-d2df-4caf-9844-01c5188165f4"] {
+      flex-grow: 1;
+    }
+
+    .cs-box[id="0fb6f525-ada1-4edb-a117-48c0bb2ecf95"] {
+      flex-grow: 1;
+      text-align: right;
+    }
+
+    .cs-widget[id="61bde6b3-e6ed-4f4b-9f6b-5ba7e7df3a8b"] .cs-button {
+      background: #45818e;
+      color: #ffffff;
+    }
+
+    .cs-widget[id="61bde6b3-e6ed-4f4b-9f6b-5ba7e7df3a8b"] {
+      background-color: transparent;
+    }
+
+    .cs-widget[id="3653f39d-2eee-4dd4-bafb-3cae1bb8503e"] {
+      text-align: left;
+      max-height: 150px;
+      background-color: transparent;
+    }
+
+    .cs-widget[id="a5236df0-65ef-4e4e-b870-f44a89c3dc6c"] {
+      background-color: transparent;
+    }
+
+    .cs-widget[id="c37a5572-213a-45ab-965d-4854d019aaad"] {
+      background-color: #ffffff;
+    }
+
+    .cs-widget[id="65067487-8f1d-4e4d-a429-e1c04e4b8a6a"] .cs-showcase-info,
+    .cs-widget[id="65067487-8f1d-4e4d-a429-e1c04e4b8a6a"] .cs-showcase-modern strong {
+      text-align: left;
+      color: #434343;
+    }
+
+    .cs-widget[id="65067487-8f1d-4e4d-a429-e1c04e4b8a6a"] .cs-button {
+      color: #ffffff;
+      background: #6aa84f;
+    }
+
+    .cs-widget[id="65067487-8f1d-4e4d-a429-e1c04e4b8a6a"] .cs-showcase-card .cs-showcase-image,
+    .cs-widget[id="65067487-8f1d-4e4d-a429-e1c04e4b8a6a"] .cs-showcase-card .cs-showcase-info,
+    .cs-widget[id="65067487-8f1d-4e4d-a429-e1c04e4b8a6a"] .cs-showcase-modern .cs-showcase-image,
+    .cs-widget[id="65067487-8f1d-4e4d-a429-e1c04e4b8a6a"] .cs-showcase-modern .cs-showcase-info {
+      border-color: #434343;
+    }
+
+    .cs-widget[id="65067487-8f1d-4e4d-a429-e1c04e4b8a6a"] {
+      background-color: transparent;
+    }
+  </style>
+
+   <link href="{% static 'css/ootstrap.min.css}" rel="stylesheet">
+   <link href="{% static 'css/css/bootstrap.css}" rel="stylesheet">
+   <link href="{% static 'css/styles.css}" rel="stylesheet">
+   <link href="{% static 'static/css/site_novo.css}" rel="stylesheet">
+ 
+   
+ 
+  <title>{% block title %}{% endblock title %}</title>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="../static/font-awesome/css/font-awesome.min.css">
+
+  <!-- Bootstrap core CSS -->
+  
+ 
+  <!-- Bootstrap core JavaScript -->
+  <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+  <script src="../static/js/jquery.js"></script>
+  <script src="../static/js/bootstrap.min.js"></script>
+  <script src="../static/js/angular.js"></script>
+  <script src="../static/js/novo_site.js"></script>
+
+  {% block js %}{% endblock %}
+</head>
+
+<body>
+  <!-- MENU -->
+
+  {% include "menu/menu.html" %}
+
+  <!-- CABEÇALHO -->
+  <!-- MENSAGENS -->
+  <!-- CORPO -->
+  {% block content %}{% endblock content %}
+  </div>
+  <div class="container-cabec" style="background-color: black; height: 80px;">
+    <div class="row-cabec">
+
+    </div>
+  </div>
+  <section id="188cc1c0-c8a5-4287-8817-a20a82a9ead2" class="cs-section cs-section-full cs-section-vertical">
+    <div class="cs-section-inner">
+      <div class="cs-lines">
+
+        <div id="a8c7911c-2097-4b90-bf4a-4e9503deae11" class="cs-line">
+          <div class="cs-boxes">
+
+            <div id="30ed6498-9971-4d03-b502-d21cef34276c" class="cs-box">
+              <div class="cs-widgets">
+
+                <div id="3653f39d-2eee-4dd4-bafb-3cae1bb8503e" class="cs-widget cs-text-widget">
+
+                  <div class="text-editor" style="vertical-align: bottom;
+                  
+                  left: 100px; 
+                  text-align:left;
+                  position: relative;
+                  line-height: 10px;
+                  top:60px">
+                    <p><span style="
+                   
+                    font-size: 36px; ">
+
+                        <strong>Venha nos visitar</strong></span></p>
+
+                    <p>&nbsp;</p>
+
+                    <p><span style="font-size:16px">Nossa loja est&aacute; aberta</span></p>
+
+                    <p><span style="font-size:16px">todos os dias da semana,</span></p>
+
+                    <p><span style="font-size :16px;">das 8h30 &agrave;s 18:30h.</span></p>
+
+                    <p>&nbsp;</p>
+
+                    <p><strong style="font-size :12px;">Av. Alberto Martins Fontoura Borges, 348 - Uberaba - MG - Cep :
+                        38.022-070</strong></p>
+
+                  </div>
+
+
+                </div>
+
+
+              </div>
+            </div>
+
+
+            <div id="0fb6f525-ada1-4edb-a117-48c0bb2ecf95" class="cs-box">
+              <div class="cs-widgets" style="
+                text-align: right;
+                ;">
+                <section class="get-in-touch">
+                  <form class="contact-form row">
+                    <div class="form-field col-lg-6">
+                      <input id="name" class="input-text js-input" type="text" required>
+                      <label class="label" for="name">NOME</label>
+                    </div>
+                    <div class="form-field col-lg-6 ">
+                      <input id="email" class="input-text js-input" type="email" required>
+                      <label class="label" for="email">E-mail</label>
+                    </div>
+                    <div class="form-field col-lg-6 ">
+                      <input id="phone" class="input-text js-input" type="text" required>
+                      <label class="label" for="phone">numero de contato</label>
+                    </div>
+                    <div class="form-field col-lg-12">
+                      <input id="message" class="input-text js-input" type="text" required>
+                      <label class="label" for="message">Menssagem</label>
+                    </div>
+                    <div class="form-field col-lg-12">
+                      <input class="submit-btn" type="submit" value="Enviar">
+                    </div>
+                  </form>
+                </section>
+                <!--
+                <div id="61bde6b3-e6ed-4f4b-9f6b-5ba7e7df3a8b" class="cs-widget cs-form-widget cs-form-button-right">
+
+                  <form method="post" class="cs-clearfix">
+                    <input type="hidden" name="email" value="vendas@mstoreuberaba.com.br" tabindex="-1">
+
+                    <div class="cs-form-group cs-form-content">
+                      <input type="text" name="content" tabindex="-1">
+                    </div>
+                    <div class="cs-form-group">
+
+                      <label for="input-0-61bde6b3-e6ed-4f4b-9f6b-5ba7e7df3a8b">Nome</label>
+                      <input type="text" tabindex=1 id="input-0-61bde6b3-e6ed-4f4b-9f6b-5ba7e7df3a8b"
+                        name="input[0|Nome]" placeholder="Nome *" required />
+                    </div>
+                    <div class="cs-form-group">
+                      <label for="input-1-61bde6b3-e6ed-4f4b-9f6b-5ba7e7df3a8b">E-mail</label>
+                      <input type="email" tabindex=1 id="input-1-61bde6b3-e6ed-4f4b-9f6b-5ba7e7df3a8b"
+                        name="input[1|E-mail]" placeholder="E-mail *" required />
+                    </div>
+                  <div class="cs-form-group">
+                      <label for="textarea-2-61bde6b3-e6ed-4f4b-9f6b-5ba7e7df3a8b">Escreva sua mensagem aqui</label>
+                    <textarea tabindex=1 id="textarea-2-61bde6b3-e6ed-4f4b-9f6b-5ba7e7df3a8b"
+                        name="input[2|Escreva sua mensagem aqui]"  style = " 
+                        width: 100%;
+                        padding: 12px 20px;
+                        margin: 8px 0;
+                        box-sizing: border-box;
+                        border: 3px solid #ccc;
+                        -webkit-transition: 0.5s;
+                        transition: 0.5s;
+                        outline: none;"placeholder="Escreva sua mensagem aqui *"
+                        required></textarea>
+                    </div>
+
+
+                    <div class="cs-form-group">
+                      <p class="cs-form-message" tabindex=2
+                        data-success="Mensagem enviada com sucesso! Obrigado pelo contato, em breve entraremos em contato!">
+                      </p>
+                      <button class="cs-button cs-form-submit cs-button-theme-1" style= "background-color: #45818e;
+                      color: #ffffff;
+                      padding: 12px 20px;
+                      border: none;
+                      border-radius: 4px;
+                      cursor: pointer;
+                      float: right;
+                    
+                    " tabindex=1>
+                        <span>Enviar</span>
+                      </button>
+                    </div>
+                  </form>
+
+                  <input type="hidden" id="customValidations"
+                    value="[{&quot;visible&quot;:true,&quot;type&quot;:&quot;text&quot;,&quot;required&quot;:true,&quot;position&quot;:0,&quot;placeholder&quot;:&quot;Nome&quot;,&quot;element&quot;:&quot;input&quot;,&quot;customValidations&quot;:[{&quot;message&quot;:&quot;Ops! Você esqueceu de preencher este campo&quot;,&quot;label&quot;:&quot;Campo não preenchido&quot;,&quot;key&quot;:&quot;required&quot;}]},{&quot;visible&quot;:true,&quot;type&quot;:&quot;email&quot;,&quot;required&quot;:true,&quot;position&quot;:1,&quot;placeholder&quot;:&quot;E-mail&quot;,&quot;element&quot;:&quot;input&quot;,&quot;customValidations&quot;:[{&quot;message&quot;:&quot;Ops! Você esqueceu de preencher este campo&quot;,&quot;label&quot;:&quot;Campo não preenchido&quot;,&quot;key&quot;:&quot;required&quot;},{&quot;message&quot;:&quot;Preencha com um e-mail válido&quot;,&quot;label&quot;:&quot;Erro de preenchimento&quot;,&quot;key&quot;:&quot;email&quot;}]},{&quot;visible&quot;:true,&quot;type&quot;:&quot;message&quot;,&quot;required&quot;:true,&quot;position&quot;:2,&quot;placeholder&quot;:&quot;Escreva sua mensagem aqui&quot;,&quot;element&quot;:&quot;textarea&quot;,&quot;customValidations&quot;:[{&quot;message&quot;:&quot;Ops! Você esqueceu de preencher este campo&quot;,&quot;label&quot;:&quot;Campo não preenchido&quot;,&quot;key&quot;:&quot;required&quot;}]}]"
+                    tabindex="-1">
+
+
+                </div>-->
+
+
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+
+  </section>
+  <div id="d14a4404-d258-4736-a6a2-7029e328bcd4" style="position:relative;
+  top: -250px; text-align: center;max-height: 600px;" class="cs-line">
+    <div class="cs-boxes">
+
+      <div id="d919bcab-f3aa-47d0-9360-c3599af4c70e" class="cs-box">
+        <div class="cs-widgets">
+
+          <div id="a5236df0-65ef-4e4e-b870-f44a89c3dc6c" class="cs-widget cs-image-widget cs-image-alignment-center">
+
+
+            <a href="https://www.google.com.br/maps/place/Av.+Alberto+Martins+Fontoura+Borges,+348+-+S%C3%A3o+Benedito,+Uberaba+-+MG,+38022-070/@-19.7586029,-47.9430561,17z/data=!3m1!4b1!4m6!3m5!1s0x94bad0386aef2bb7:0x79314490dd78147!8m2!3d-19.758608!4d-47.9404812!16s%2Fg%2F11c24bdfvt?entry=ttu"
+              target="_self">
+
+              <img class="cs-chosen-image"
+                src="https://yata-apix-f6c70563-e882-4027-b948-58995e473905.s3-object.locaweb.com.br/6ac0c4aee77f4c3484c9328b1ef837ba.jpg"
+                title="maps.jpg" alt="maps.jpg" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section id="f549097a-23dd-4bc9-a5fa-babee6f90093" class="cs-section cs-section-vertical">
+    <div class="cs-section-inner">
+      <div class="cs-lines">
+        <div id="95fca0c4-46a8-4b27-99d0-8189e62c4cfb" class="cs-line">
+          <div class="cs-boxes">
+
+            <div id="10370684-d2df-4caf-9844-01c5188165f4" class="cs-box" >
+              <div class="cs-widgets">
+
+                <div id="65067487-8f1d-4e4d-a429-e1c04e4b8a6a" class="cs-widget cs-showcase-widget">
+                  <ul class="cs-showcase-products cs-showcase-simple cs-showcase-square cs-showcase-4-per-row"
+                    data-stock="{&quot;showOutOfStock&quot;:false,&quot;outOfStockMessage&quot;:&quot;Produto sem estoque&quot;,&quot;minimumAlert&quot;:false,&quot;minimum&quot;:5,&quot;alertRecipients&quot;:[]}">
+
+                    <li class="cs-showcase-product" data-id="4b863e08-e009-4c44-baf9-7b810be3f98b"
+                      data-product="{&quot;weight&quot;:&quot;100.0&quot;,&quot;variations&quot;:[],&quot;sku&quot;:null,&quot;siteId&quot;:&quot;92168966-1a5c-4ca4-ae60-c25297c4d308&quot;,&quot;requiresShipping&quot;:true,&quot;quantity&quot;:null,&quot;price&quot;:&quot;180.0&quot;,&quot;photos&quot;:[{&quot;siteId&quot;:&quot;92168966-1a5c-4ca4-ae60-c25297c4d308&quot;,&quot;settings&quot;:{&quot;title&quot;:&quot;bolsa.png&quot;,&quot;thumbnails&quot;:{&quot;small&quot;:{&quot;src&quot;:&quot;https://yata-store-92168966-1a5c-4ca4-ae60-c25297c4d308.s3-object.locaweb.com.br/1fffb9a10c754ee4a9e0e4ce4cd405e8.png&quot;},&quot;medium&quot;:{&quot;src&quot;:&quot;https://yata-store-92168966-1a5c-4ca4-ae60-c25297c4d308.s3-object.locaweb.com.br/48269890f3804449b4a999f5ed0758ec.png&quot;}},&quot;src&quot;:&quot;https://yata-store-92168966-1a5c-4ca4-ae60-c25297c4d308.s3-object.locaweb.com.br/f2983a4db5e347f6bd8daf045849abae.png&quot;},&quot;position&quot;:0},{&quot;siteId&quot;:&quot;92168966-1a5c-4ca4-ae60-c25297c4d308&quot;,&quot;settings&quot;:{&quot;title&quot;:&quot;GettyImages-951451018.jpg&quot;,&quot;thumbnails&quot;:{&quot;small&quot;:{&quot;src&quot;:&quot;https://yata-store-92168966-1a5c-4ca4-ae60-c25297c4d308.s3-object.locaweb.com.br/08de3f99c007439c9ebb1be3c3c780e7.jpg&quot;},&quot;medium&quot;:{&quot;src&quot;:&quot;https://yata-store-92168966-1a5c-4ca4-ae60-c25297c4d308.s3-object.locaweb.com.br/9795f0a002f040e4833501eb4d50e6fe.jpg&quot;}},&quot;src&quot;:&quot;https://yata-store-92168966-1a5c-4ca4-ae60-c25297c4d308.s3-object.locaweb.com.br/102e71cca4e246338ec19f3a0bfa276a.jpg&quot;},&quot;position&quot;:1},{&quot;siteId&quot;:&quot;92168966-1a5c-4ca4-ae60-c25297c4d308&quot;,&quot;settings&quot;:{&quot;title&quot;:&quot;GettyImages-951447446.jpg&quot;,&quot;thumbnails&quot;:{&quot;small&quot;:{&quot;src&quot;:&quot;https://yata-store-92168966-1a5c-4ca4-ae60-c25297c4d308.s3-object.locaweb.com.br/c919f13bfa034ab58291696d79d9f0c7.jpg&quot;},&quot;medium&quot;:{&quot;src&quot;:&quot;https://yata-store-92168966-1a5c-4ca4-ae60-c25297c4d308.s3-object.locaweb.com.br/af1d9e8dcee54155969300a85893af7c.jpg&quot;}},&quot;src&quot;:&quot;https://yata-store-92168966-1a5c-4ca4-ae60-c25297c4d308.s3-object.locaweb.com.br/867325039d91436eaec8a5438da8310e.jpg&quot;},&quot;position&quot;:2},{&quot;siteId&quot;:&quot;92168966-1a5c-4ca4-ae60-c25297c4d308&quot;,&quot;settings&quot;:{&quot;title&quot;:&quot;GettyImages-951443894.jpg&quot;,&quot;thumbnails&quot;:{&quot;small&quot;:{&quot;src&quot;:&quot;https://yata-store-92168966-1a5c-4ca4-ae60-c25297c4d308.s3-object.locaweb.com.br/128859db01b743669405d1726af6ac3e.jpg&quot;},&quot;medium&quot;:{&quot;src&quot;:&quot;https://yata-store-92168966-1a5c-4ca4-ae60-c25297c4d308.s3-object.locaweb.com.br/e9da6fdb45ae44659ab697586e2b8c10.jpg&quot;}},&quot;src&quot;:&quot;https://yata-store-92168966-1a5c-4ca4-ae60-c25297c4d308.s3-object.locaweb.com.br/37d15fadc29f4efc9d270c490db894cb.jpg&quot;},&quot;position&quot;:3}],&quot;outOfStock&quot;:false,&quot;options&quot;:[],&quot;offerPrice&quot;:&quot;150.0&quot;,&quot;name&quot;:&quot;Bolsa Rattan&quot;,&quot;manageStock&quot;:false,&quot;id&quot;:&quot;4b863e08-e009-4c44-baf9-7b810be3f98b&quot;,&quot;hasVariation&quot;:false,&quot;description&quot;:&quot;Produto meramente ilustrativo&quot;,&quot;barCode&quot;:null,&quot;active&quot;:true}">
+                      <div class="cs-showcase-image"
+                        style="background-image: url(https://yata-store-92168966-1a5c-4ca4-ae60-c25297c4d308.s3-object.locaweb.com.br/f2983a4db5e347f6bd8daf045849abae.png);">
+                      </div>
+                      <div class="cs-showcase-info">
+                        <strong>Bolsa Rattan</strong>
+                        <span>R$150,00</span>
+
+                        <button class="cs-button cs-button-theme-1">
+                          <span>Ver detalhes</span>
+                        </button>
+                      </div>
+                    </li>
+                    <li class="cs-showcase-product" data-id="b682d8ae-9268-48a2-839b-a8588c412ae7"
+                      data-product="{&quot;weight&quot;:&quot;100.0&quot;,&quot;variations&quot;:[],&quot;sku&quot;:null,&quot;siteId&quot;:&quot;92168966-1a5c-4ca4-ae60-c25297c4d308&quot;,&quot;requiresShipping&quot;:true,&quot;quantity&quot;:null,&quot;price&quot;:&quot;99.99&quot;,&quot;photos&quot;:[{&quot;siteId&quot;:&quot;92168966-1a5c-4ca4-ae60-c25297c4d308&quot;,&quot;settings&quot;:{&quot;title&quot;:&quot;mocassim.png&quot;,&quot;thumbnails&quot;:{&quot;small&quot;:{&quot;src&quot;:&quot;https://yata-store-92168966-1a5c-4ca4-ae60-c25297c4d308.s3-object.locaweb.com.br/72effde9415f4bf6af5f59ea43b0b664.png&quot;},&quot;medium&quot;:{&quot;src&quot;:&quot;https://yata-store-92168966-1a5c-4ca4-ae60-c25297c4d308.s3-object.locaweb.com.br/d47913675a984515ae3c53b58610ade9.png&quot;}},&quot;src&quot;:&quot;https://yata-store-92168966-1a5c-4ca4-ae60-c25297c4d308.s3-object.locaweb.com.br/ec5402f099ba4b4abec95200cbedce32.png&quot;},&quot;position&quot;:0}],&quot;outOfStock&quot;:false,&quot;options&quot;:[],&quot;offerPrice&quot;:null,&quot;name&quot;:&quot;Mocassim caramelo Nº36&quot;,&quot;manageStock&quot;:false,&quot;id&quot;:&quot;b682d8ae-9268-48a2-839b-a8588c412ae7&quot;,&quot;hasVariation&quot;:false,&quot;description&quot;:&quot;Produto meramente ilustrativo&quot;,&quot;barCode&quot;:null,&quot;active&quot;:true}">
+                      <div class="cs-showcase-image"
+                        style="background-image: url(https://yata-store-92168966-1a5c-4ca4-ae60-c25297c4d308.s3-object.locaweb.com.br/ec5402f099ba4b4abec95200cbedce32.png);">
+                      </div>
+                      <div class="cs-showcase-info">
+                        <strong>Mocassim caramelo Nº36</strong>
+                        <span>R$99,99</span>
+                        <button class="cs-button cs-button-theme-1">
+                          <span>Ver detalhes</span>
+                        </button>
+                      </div>
+                    </li>
+                    <li class="cs-showcase-product" data-id="08aeb841-9cd3-4cc2-8de3-b3c7494282fd"
+                      data-product="{&quot;weight&quot;:&quot;100.0&quot;,&quot;variations&quot;:[],&quot;sku&quot;:null,&quot;siteId&quot;:&quot;92168966-1a5c-4ca4-ae60-c25297c4d308&quot;,&quot;requiresShipping&quot;:true,&quot;quantity&quot;:null,&quot;price&quot;:&quot;100.0&quot;,&quot;photos&quot;:[{&quot;siteId&quot;:&quot;92168966-1a5c-4ca4-ae60-c25297c4d308&quot;,&quot;settings&quot;:{&quot;title&quot;:&quot;GettyImages-803690548.jpg&quot;,&quot;thumbnails&quot;:{&quot;small&quot;:{&quot;src&quot;:&quot;https://yata-store-92168966-1a5c-4ca4-ae60-c25297c4d308.s3-object.locaweb.com.br/a0e40252a4cb4ab4a55534cc162e348d.jpg&quot;},&quot;medium&quot;:{&quot;src&quot;:&quot;https://yata-store-92168966-1a5c-4ca4-ae60-c25297c4d308.s3-object.locaweb.com.br/9cb66e2ad12a4007b935c3f37db34620.jpg&quot;}},&quot;src&quot;:&quot;https://yata-store-92168966-1a5c-4ca4-ae60-c25297c4d308.s3-object.locaweb.com.br/899c04ff2d6f488dae3fe370028e974c.jpg&quot;},&quot;position&quot;:0},{&quot;siteId&quot;:&quot;92168966-1a5c-4ca4-ae60-c25297c4d308&quot;,&quot;settings&quot;:{&quot;title&quot;:&quot;GettyImages-689294780.jpg&quot;,&quot;thumbnails&quot;:{&quot;small&quot;:{&quot;src&quot;:&quot;https://yata-store-92168966-1a5c-4ca4-ae60-c25297c4d308.s3-object.locaweb.com.br/e2c8dc1f3d6a4c049a07b581bae7a09c.jpg&quot;},&quot;medium&quot;:{&quot;src&quot;:&quot;https://yata-store-92168966-1a5c-4ca4-ae60-c25297c4d308.s3-object.locaweb.com.br/fa126f3c15724447ae0201d7d52efbbf.jpg&quot;}},&quot;src&quot;:&quot;https://yata-store-92168966-1a5c-4ca4-ae60-c25297c4d308.s3-object.locaweb.com.br/e97017636b184bf88095c1846ffbb46a.jpg&quot;},&quot;position&quot;:1}],&quot;outOfStock&quot;:false,&quot;options&quot;:[],&quot;offerPrice&quot;:&quot;79.99&quot;,&quot;name&quot;:&quot;Macaquinho estampado&quot;,&quot;manageStock&quot;:false,&quot;id&quot;:&quot;08aeb841-9cd3-4cc2-8de3-b3c7494282fd&quot;,&quot;hasVariation&quot;:false,&quot;description&quot;:&quot;Produto meramente ilustrativo&quot;,&quot;barCode&quot;:null,&quot;active&quot;:true}">
+                      <div class="cs-showcase-image"
+                        style="background-image: url(https://yata-store-92168966-1a5c-4ca4-ae60-c25297c4d308.s3-object.locaweb.com.br/899c04ff2d6f488dae3fe370028e974c.jpg);">
+                      </div>
+                     <div class="cs-showcase-info">
+                        <strong>Macaquinho estampado</strong>
+                        <span>R$79,99</span>
+
+                        <button class="cs-button cs-button-theme-1">
+                          <span>Ver detalhes</span>
+                        </button>
+
+                      </div>
+
+                    </li>
+
+
+
+                    <li class="cs-showcase-product" data-id="9405fca7-2b08-42b5-8b9e-173de4cd93c6"
+                      data-product="{&quot;weight&quot;:&quot;100.0&quot;,&quot;variations&quot;:[],&quot;sku&quot;:null,&quot;siteId&quot;:&quot;92168966-1a5c-4ca4-ae60-c25297c4d308&quot;,&quot;requiresShipping&quot;:true,&quot;quantity&quot;:null,&quot;price&quot;:&quot;237.0&quot;,&quot;photos&quot;:[{&quot;siteId&quot;:&quot;92168966-1a5c-4ca4-ae60-c25297c4d308&quot;,&quot;settings&quot;:{&quot;title&quot;:&quot;oculos-de-sol.png&quot;,&quot;thumbnails&quot;:{&quot;small&quot;:{&quot;src&quot;:&quot;https://yata-store-92168966-1a5c-4ca4-ae60-c25297c4d308.s3-object.locaweb.com.br/17645f7cf3d140f491a2472ee8111a1f.png&quot;},&quot;medium&quot;:{&quot;src&quot;:&quot;https://yata-store-92168966-1a5c-4ca4-ae60-c25297c4d308.s3-object.locaweb.com.br/cfeda3ac36ad4f25ace509e640d0a5d6.png&quot;}},&quot;src&quot;:&quot;https://yata-store-92168966-1a5c-4ca4-ae60-c25297c4d308.s3-object.locaweb.com.br/f644e58a38bc4978a36bcd22b34c9fbf.png&quot;},&quot;position&quot;:0}],&quot;outOfStock&quot;:false,&quot;options&quot;:[],&quot;offerPrice&quot;:&quot;200.0&quot;,&quot;name&quot;:&quot; Óculos de Sol&quot;,&quot;manageStock&quot;:false,&quot;id&quot;:&quot;9405fca7-2b08-42b5-8b9e-173de4cd93c6&quot;,&quot;hasVariation&quot;:false,&quot;description&quot;:&quot;Produto meramente ilustrativo&quot;,&quot;barCode&quot;:null,&quot;active&quot;:true}">
+                      <div class="cs-showcase-image"
+                        style="background-image: url(https://yata-store-92168966-1a5c-4ca4-ae60-c25297c4d308.s3-object.locaweb.com.br/f644e58a38bc4978a36bcd22b34c9fbf.png);">
+                      </div>
+
+                      <div class="cs-showcase-info">
+                        <strong> Óculos de Sol</strong>
+                        <span>R$200,00</span>
+
+                        <button class="cs-button cs-button-theme-1">
+                          <span>Ver detalhes</span>
+                        </button>
+
+                      </div>
+
+                    </li>
+
+
+                  </ul>
+
+
+
+
+                </div>
+
+
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+  <section id="c9955e14-ed33-424d-8c25-b441e7f04826" class="cs-section cs-section-full cs-section-vertical">
+    <div class="cs-section-inner">
+      <div class="cs-lines">
+
+        <div id="1cd252e8-d70f-44c5-b2ef-6d834f4af5a0" class="cs-line">
+          <div class="cs-boxes">
+
+            <div id="6c88374b-ea94-481b-bf0e-93c0124f7aed" class="cs-box">
+              <div class="cs-widgets">
+
+                <div id="c37a5572-213a-45ab-965d-4854d019aaad" class="cs-widget cs-text-widget">
+
+                  <div class="text-editor">
+                    <p style="text-align:center">&nbsp;</p>
+
+                    <p style="text-align:center"><span style="font-size:26px"><strong>MODA CONSIENTE</strong></span></p>
+
+                    <p style="text-align:center"><span style="font-size:22px">Alternativa sustent&aacute;vel e
+                        econ&ocirc;mica</span></p>
+
+                    <p style="text-align:center">&nbsp;</p>
+
+                  </div>
+
+
+                </div>
+
+
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+
+  <footer id="6fbfce54-aca5-424e-96b5-928723433db9" class="cs-section cs-section-full cs-section-vertical">
+    <div class="cs-section-inner">
+      <div class="cs-lines">
+
+      </div>
+    </div>
+  </footer>
+
+  </div>
+  <!--<script src="/assets/criadordesites.js?a04239cb-fa5d-46bb-b78d-6ba41d80599f"></script>-->
+  
+  <!--<script src=></script>
+<script src=}"></script>
+<script src=></script>-->
+</body>
+
+</html>

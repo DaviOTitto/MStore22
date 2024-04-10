@@ -1,0 +1,105 @@
+{% block css %}
+<style type="text/css">
+.menu,
+.sub-menu {
+    margin: 0;
+    padding: 0;
+    display: block;
+    font-weight: normal;
+    line-height: 1.42857143;
+    color: #333;
+    white-space: nowrap;
+}
+.clearfix:after{
+    content: '.';
+    display: block;
+    clear: both;
+    height: 0;
+    line-height: 0;
+    font-size: 0;
+    visibility: hidden;
+    overflow: hidden;
+}
+
+.menu li {
+    position: relative;
+}
+.menu > li {
+    float: left;
+}
+
+.menu li:hover > .sub-menu {
+    display: block;
+}
+.sub-menu {
+    display: none;
+    position: absolute;
+    min-width: 150px;
+}
+
+.sub-menu .sub-menu {
+    top: 0;
+    left: 100%;
+}
+</style>
+
+{% endblock css %}
+<div class="navbar navbar-inverse navbar-fixed-top" style="background-color: black; font-size: 16px;" >
+  <div class="container" >
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="{%url 'inicio' %}" title="Clique para ir para a página inicial">
+        MStore 
+      </a>
+    </div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav menu clearfix" style =  "height : 60px;">
+<!-- ARQUIVOS INÍCIO -->
+        <li class="dropdown">
+          <a href="{%url 'inicio' %}" class="dropdown-toggle" data-toggle="dropdown">Home <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+        
+        </li>
+<!-- ARQUIVOS FIM -->
+<!-- CONSULTAS INÍCIO -->
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Produto <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+        </li>
+<!-- CONSULTAS FIM -->
+<!-- RELATÓRIOS INÍCIO -->
+        <li class="dropdown">
+          <a href="{%url 'completa_list' %}" class="dropdown-toggle" data-toggle="dropdown">Contato <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+
+        </li>
+<!-- RELATÓRIOS FIM -->
+<!-- FERRAMENTAS INÍCIO -->
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tabelas Camisetas  <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+
+        </li>        
+        <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Carrinho </label>  <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+
+          </li>   
+<!-- FERRAMENTAS FIM -->
+ <!--      
+<li><a href="#">Ajuda <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+          <ul class="dropdown-menu sub-menu">
+            <li><a href="" data-toggle="modal" data-target="#ModalSobreSistema" title="Clique para saber mais">Sobre o Sistema</a></li>
+            <li><a href="http://www.cecotein.com.br/Cecotein/" target="_blank" rel="noopener noreferrer">Home Page</a></li>
+          </ul>
+        </li>    -->                                       
+      </ul>
+      <!--
+      <ul class="nav navbar-nav navbar-right">
+ 
+          <li><a  title="Clique para ir para área do usuário">Olá</a></li>
+
+          <li><a><span class="glyphicon glyphicon-exclamation-sign"></span> Login</a></li>
+      </ul>-->
+    </div><!--/.navbar-collapse -->
+  </div>
+</div>
