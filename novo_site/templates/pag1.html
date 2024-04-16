@@ -698,14 +698,13 @@
       console.log(Nome + contato + mensagem + email)
       if (Nome && email && mensagem) {
         Email.send({
-          Host: "smtp.elasticemail.com",
-          Username: "mstore@mstoreuberaba.com.br",
-          Password: "7C33A5552A5D897D6E5B5D4491256980167C",
-          To: 'mstore@mstoreuberaba.com.br',
-          From: "mstore@mstoreuberaba.com.br",
-          Subject: `Mensagem do cliente ${Nome} email enviado do site MStore`,
-          Body: ` Email  : ${email}  Telefone   : ${contato} -------------
-         \n mensagem : ${mensagem}  `
+        Host: "smtp.elasticemail.com",
+        Username: "mstore@mstoreuberaba.com.br",
+        Password: "7C33A5552A5D897D6E5B5D4491256980167C",
+        To: 'mstore@mstoreuberaba.com.br',
+        From: "mstore@mstoreuberaba.com.br",
+        Subject: `Mensagem do cliente ${Nome} email enviado do site MStore`,
+        Body: ` Nome: ${Nome} <br><br> Email: ${email} <br> Telefone: ${contato} <br> Mensagem: ${mensagem} `
         }).then(
           alert("mensagem enviada com sucesso ")
 
