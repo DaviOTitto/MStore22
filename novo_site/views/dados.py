@@ -40,9 +40,31 @@ def  conectaMysql():
                            port=3306)
     return con
 
-
+SAlvo = TemplateView.as_view(template_name='SAlvo.html')
+produ = TemplateView.as_view(template_name='emprodu.html')
 def adciona_automatico(request):
-        
+    booleana = False
+    order_forms = Pedido() 
+    data_order_forms = Data_aux()
+    try:
+      check = (Pedido.objects.latest('pk'))
+    except Pedido.DoesNotExist:
+      check = None
+    try:
+      check2 = (Titulos.objects.latest('pk'))
+    except ItemPed.DoesNotExist:
+      check2 = None   
+    
+    if check == None:
+         auto = 1
+    else :
+         auto = (Venda.objects.latest('pk').numero_ven + 1 )
+         print(auto)
+    if check2 == None:
+         auto2 = 1
+    else :
+         auto2 = (Titulos.objects.latest('pk').numero_tit + 1 )
+         print(auto2)    
     con_mysql = conectaMysql()
     cur_mysql = con_mysql.cursor()
     data = datetime.today().strftime("%d/%m/%Y %H:%M:%S")
@@ -55,7 +77,36 @@ def adciona_automatico(request):
             ("coditem_ite","Código_da_empresa","Código_do_produto","Quantidade","Preço")
             values(%s,%s,%s,%s)'''            
     lista_insert = [auto,"51738180697",data]                      
-    lista_insert = [auto2,3,19634,1,100.12]   
+    lista_insert2 = [auto2,3,19634,1,100.12]
+    if auto > 0 & auto2>0:
+        try: 
+             print("entrou no try ")
+             cur_mysql.execute(sql,lista_insert)
+             print("executou o sql executou sql do Pedido ") 
+             con_mysql.commit()
+             booleana=True
+        except:
+             print("não foi")
+             con_mysql.rollback()
+             booleana=False
+   
+        try: 
+             print("entrou no try ")
+             cur_mysql.execute(sql2,lista_insert2)
+             print("executou o sql  do ItemPed") 
+             con_mysql.commit()
+             booleana=True
+
+        except:
+             print("não foi")
+             con_mysql.rollback()
+             booleana=False
+    if booleana : 
+        return HttpResponseRedirect(resolve_url("SAlvo"))
+    else :
+        return HttpResponseRedirect(resolve_url("emprodu"))
+
+
 
 
 

@@ -25,6 +25,10 @@ from .views.dados  import *
 dados_patterns = [
     path('',completa_lista,name='completa_list'),
     path('emprodu/',emprodu,name='emprodu'),
+    path("rodar/",rodar,name="insert"),
+    path("Salvo/",SAlvo,name="SAlvo"),
+    path("emprodu/",emprodu,name="emprodu"),
+    path("insert/",adciona_automatico,name="adciona"),
 ]
 urlpatterns = [
     path('', home, name='inicio'),
