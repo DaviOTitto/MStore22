@@ -12,12 +12,20 @@ from . import *
 from datetime import datetime
 
 
-class Contactar(models.Model):
-    id = models.AutoField("Codigo",primary_key=True)
-    nome = models.CharField("name",max_length=20,null=True ,blank =True)
-    email = models.CharField("email",max_length=100,null=True ,blank =True)
-    mensagem = models.CharField("texto",max_length=3000,null=True ,blank =True)
+class Pedido(models.Model):
+    codped_ped = models.AutoField("Codigo",primary_key=True)
+    cnpj = models.CharField("cnpj",max_length=14,null=True ,blank =True)
+    hora_ped = models.DateTimeField("Data e hora ",null=True ,blank =True,auto_now_add=True,auto_now=False)
    
     class Meta:
-        verbose_name = 'contactar'
-        verbose_name_plural = 'Contactares'
+        verbose_name = 'pedido'
+        verbose_name_plural = 'pedidos'
+class ItemPed(models.Model):
+    coditem_ite = models.AutoField("Codigo",primary_key=True)
+    Código_da_empresa = models.IntegerField("codigo da empresa",null=True)
+    Código_do_produto = models.IntegerField("codigo do produto",null=True)
+    Quantidade = models.IntegerField("quantidade",null=True)
+    Preço = models.DecimalField("valor do produto", null =True , max_digits=6,decimal_places=2)
+    class Meta:
+        verbose_name ="item pedido"
+        verbose_name_plural = "itens pedidos"

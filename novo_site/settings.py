@@ -1,7 +1,8 @@
 import os
 from decouple import config, Csv
 from dj_database_url import parse as dburl
-
+import pymysql
+pymysql.install_as_MySQLdb()
 """
 Django settings for novo_site project.
 
@@ -109,28 +110,28 @@ WSGI_APPLICATION = 'novo_site.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'novadtbp',
-        'USER': 'postgres',
-        'PASSWORD': '@cmaurici12',
-        'HOST': '192.168.1.105',
-        'PORT': '5432',
-    }
-}
-
-
 #DATABASES = {
 #    'default': {
-#        'ENGINE': 'django.db.backends.mysql',
-#        'NAME': '???',
+#        'ENGINE': 'django.db.backends.postgresql',
+#        'NAME': 'novadtbp',
 #        'USER': 'postgres',
 #        'PASSWORD': '@cmaurici12',
 #        'HOST': '192.168.1.105',
-#        'PORT': '???',
+#        'PORT': '5432',
 #    }
-# }
+#}
+
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'cecotein3',
+        'USER': 'cecotein3',
+        'PASSWORD': 'vsy8y3',
+        'HOST': '186.202.152.195',
+        'PORT': '3306',
+    }
+ }
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
 

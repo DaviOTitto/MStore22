@@ -10,5 +10,11 @@ from .models.dados import *
 
 class  CadastrosForm(forms.ModelForm):
     class Meta:
-        model =  Contactar
+        model =  Pedido
         fields = '__all__'
+class  Cadastros_iteForm(forms.ModelForm):
+    class Meta:
+        model =  ItemPed
+        fields = '__all__'
+    
+    
