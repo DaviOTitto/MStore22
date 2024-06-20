@@ -327,6 +327,7 @@
   </div>
   </div>
   </div>
+  
   <section id="188cc1c0-c8a5-4287-8817-a20a82a9ead2" class="cs-section cs-section-full cs-section-vertical">
     <div class="cs-section-inner">
       <div class="cs-lines">
@@ -336,82 +337,34 @@
 
             <div id="30ed6498-9971-4d03-b502-d21cef34276c" class="cs-box">
               <div class="cs-widgets">
-
-                <div id="3653f39d-2eee-4dd4-bafb-3cae1bb8503e" class="cs-widget cs-text-widget">
-
-                  <div class="text-editor" style="vertical-align: bottom;
-                
-                  text-align:left;
-                  position: relative;
-                  line-height: 25px;
-                  top: -120px">
-                    <p><span style="
-                   
-                    font-size: 36px; ">
-
-                        <strong>Venha nos visitar</strong></span></p>
-
-                    <p>&nbsp;</p>
-
-                    <p><span style="font-size:16px">Nossa loja est&aacute; aberta</span></p>
-
-                    <p><span style="font-size:16px">todos os dias da semana,</span></p>
-
-                    <p><span style="font-size :16px;">das 8h30 &agrave;s 18:30h.</span></p>
-
-                    <p>&nbsp;</p>
-
-                    <p><strong style="font-size :12px;">Av. Alberto Martins Fontoura Borges, 348 - Uberaba - MG - Cep :
-                        38.022-070</strong></p>
-
-                  </div>
-
-
-                </div>
-
-
               </div>
             </div>
 
+            <div id="0fb6f525-ada1-4edb-a117-48c0bb2ecf95" class="cs-box">
               <div class="cs-widgets" style="
                 text-align: right;
                 ">
-                <section class="get-in-touch">
-                  <form class="contact-form row">
+               <div class="cs-widgets" style="
+               text-align: right;
+               ">
+               <section class="get-in-touch">
+                 <form >
 
-                    <div class="form-field col-lg-6">
-                      <input id="name" class="input-text js-input" type="text" required>
-                      <label class="label" name="input[0|Nome]" for="name">NOME</label>
-                    </div>
-                    <div class="form-field col-lg-6 ">
-                      <input id="email" class="input-text js-input" type="email" required>
-                      <label class="label" name="input[1|E-mail]" for="email" placeholder="E-mail *"
-                        required>E-mail</label>
-                    </div>
-                    <div class="form-field col-lg-6 ">
-                      <input id="phone" class="input-text js-input" type="text" required>
-                      <label class="label" for="phone">numero de contato</label>
-                    </div>
-                    <div class="form-field col-lg-12">
-                      <input id="message" class="input-text js-input" type="text" required>
-                      <label class="label" name="input[2|Escreva sua mensagem aqui]" for="message"
-                        placeholder="Escreva sua mensagem aqui*" required>Menssagem</label>
-                    </div>
-                    <div class="cs-form-group">
-                      <p class="cs-form-message" tabindex=2
-                        data-success="Mensagem enviada com sucesso! Obrigado pelo contato, em breve entraremos em contato!">
-                      </p>
-                      <input type="hidden" id="customValidations"
-                        value="[{&quot;visible&quot;:true,&quot;type&quot;:&quot;text&quot;,&quot;required&quot;:true,&quot;position&quot;:0,&quot;placeholder&quot;:&quot;Nome&quot;,&quot;element&quot;:&quot;input&quot;,&quot;customValidations&quot;:[{&quot;message&quot;:&quot;Ops! Você esqueceu de preencher este campo&quot;,&quot;label&quot;:&quot;Campo não preenchido&quot;,&quot;key&quot;:&quot;required&quot;}]},{&quot;visible&quot;:true,&quot;type&quot;:&quot;email&quot;,&quot;required&quot;:true,&quot;position&quot;:1,&quot;placeholder&quot;:&quot;E-mail&quot;,&quot;element&quot;:&quot;input&quot;,&quot;customValidations&quot;:[{&quot;message&quot;:&quot;Ops! Você esqueceu de preencher este campo&quot;,&quot;label&quot;:&quot;Campo não preenchido&quot;,&quot;key&quot;:&quot;required&quot;},{&quot;message&quot;:&quot;Preencha com um e-mail válido&quot;,&quot;label&quot;:&quot;Erro de preenchimento&quot;,&quot;key&quot;:&quot;email&quot;}]},{&quot;visible&quot;:true,&quot;type&quot;:&quot;message&quot;,&quot;required&quot;:true,&quot;position&quot;:2,&quot;placeholder&quot;:&quot;Escreva sua mensagem aqui&quot;,&quot;element&quot;:&quot;textarea&quot;,&quot;customValidations&quot;:[{&quot;message&quot;:&quot;Ops! Você esqueceu de preencher este campo&quot;,&quot;label&quot;:&quot;Campo não preenchido&quot;,&quot;key&quot;:&quot;required&quot;}]}]"
-                        tabindex="-1">
-                      <div class="form-field col-lg-12">
-                        <input class="submit-btn" onclick="enviar_email()" type="submit" value="Enviar" tabindex=1>
-                      </div>
-                    </div>
-
+                    <div class="container">
+                      <h1>Adicionar Cliente</h1>
+                      <form  class="contact-form row" method="POST">
+                        {% csrf_token %}
+                        {{ forms|bootstrap }}
+                        <div class="form-inline buttons">
+                          <i class="fa fa-times"></i>
+                          Cancelar
+                      </a>
+                      <button class="btn btn-primary pull-right" value="Save">
+                          <i class="fa fa-floppy-o"></i>
+                          Salvar
+                      </button>
                   </form>
-                </section>
-                <!--
+                  <!--
                 <div id="61bde6b3-e6ed-4f4b-9f6b-5ba7e7df3a8b" class="cs-widget cs-form-widget cs-form-button-right">
 
                   <form method="post" class="cs-clearfix">
@@ -481,28 +434,6 @@
         </div>
 
   </section>
-  <div id="d14a4404-d258-4736-a6a2-7029e328bcd4" style="position:relative;
-  top: -250px; text-align: center;max-height: 600px;" class="cs-line">
-    <div class="cs-boxes">
-
-      <div id="d919bcab-f3aa-47d0-9360-c3599af4c70e" class="cs-box">
-        <div class="cs-widgets">
-
-          <div id="a5236df0-65ef-4e4e-b870-f44a89c3dc6c" class="cs-widget cs-image-widget cs-image-alignment-center">
-
-
-            <a href="https://www.google.com.br/maps/place/Av.+Alberto+Martins+Fontoura+Borges,+348+-+S%C3%A3o+Benedito,+Uberaba+-+MG,+38022-070/@-19.7586029,-47.9430561,17z/data=!3m1!4b1!4m6!3m5!1s0x94bad0386aef2bb7:0x79314490dd78147!8m2!3d-19.758608!4d-47.9404812!16s%2Fg%2F11c24bdfvt?entry=ttu"
-              target="_self">
-
-              <img class="cs-chosen-image"
-                src="https://yata-apix-f6c70563-e882-4027-b948-58995e473905.s3-object.locaweb.com.br/6ac0c4aee77f4c3484c9328b1ef837ba.jpg"
-                title="maps.jpg" alt="maps.jpg" />
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
   <!--<section id="f549097a-23dd-4bc9-a5fa-babee6f90093" class="cs-section cs-section-vertical">
     <div class="cs-section-inner">
       <div class="cs-lines">
@@ -652,68 +583,6 @@
   </div>
   <!--<script src="/assets/criadordesites.js?a04239cb-fa5d-46bb-b78d-6ba41d80599f"></script>-->
   <script src="https://smtpjs.com/v3/smtp.js">
-  </script>
-  <script>
-    function enviar_email() {
-      // var  Nome = document.getElementById("name").value;
-      var Nome;
-      element = document.getElementById('name');
-      if (element != null) {
-        var Nome = element.value;
-      }
-      else {
-        var Nome  = null;
-
-      }
-      var email;
-      element1 = document.getElementById("email")
-      if (element1 != null) {
-        var email = element1.value;
-      }
-      else {
-        var email  = null;
-
-      }
-      var contato
-      elemenT = document.getElementById('phone')
-      if (elemenT != null) {
-        var contato = elemenT.value;
-      }
-      else {
-        var contato  = null;
-
-      }
-      var mensagem;
-      element2 = document.getElementById('message');
-      
-      if (element2 != null) {
-        var mensagem = element2.value;
-      }
-      else {
-        var mensagem  = null;
-
-      }
-
-      console.log(Nome + contato + mensagem + email)
-      if (Nome && email && mensagem) {
-        Email.send({
-        Host: "smtp.elasticemail.com",
-        Username: "mstore@mstoreuberaba.com.br",
-        Password: "7C33A5552A5D897D6E5B5D4491256980167C",
-        To: 'mstore@mstoreuberaba.com.br',
-        From: "mstore@mstoreuberaba.com.br",
-        Subject: `Mensagem do cliente ${Nome} email enviado do site MStore`,
-        Body: ` Nome: ${Nome} <br><br> Email: ${email} <br> Telefone: ${contato} <br> Mensagem: ${mensagem} `
-        }).then(
-          alert("mensagem enviada com sucesso ")
-
-        )
-        Else
-        {
-          alert("se os campos não forem devidamente preenchidos a mensagem não será enviada ")
-        }
-      }
-    }
   </script>
   <!--<script src=></script>
 <script src=}"></script>

@@ -29,6 +29,7 @@ dados_patterns = [
     path("Salvo/",SAlvo,name="SAlvo"),
     path("emprodu/",emprodu,name="emprodu"),
     path("insert/",adciona_automatico,name="adciona"),
+    path("adciona_cli/",adcinona_cliente,name="adciona_cli")
 ]
 urlpatterns = [
     path('', home, name='inicio'),
