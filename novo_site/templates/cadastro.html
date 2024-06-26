@@ -348,22 +348,20 @@
                text-align: right;
                ">
                <section class="get-in-touch">
-                 <form >
+
 
                     <div class="container">
                       <h1>Adicionar Cliente</h1>
                       <form  class="contact-form row" method="POST">
                         {% csrf_token %}
                         {{ forms|bootstrap }}
-                        <div class="form-inline buttons">
-                          <i class="fa fa-times"></i>
-                          Cancelar
+                        
                       </a>
-                      <button class="btn btn-primary pull-right" value="Save">
-                          <i class="fa fa-floppy-o"></i>
-                          Salvar
-                      </button>
-                  </form>
+                      <div class="col-md-1">
+                        <button class="btn btn-primary pull-right" value="Save">
+                          <i class="fa fa-floppy-o"></i>Salvar</button>
+                      </div>
+                    </forms>
                   <!--
                 <div id="61bde6b3-e6ed-4f4b-9f6b-5ba7e7df3a8b" class="cs-widget cs-form-widget cs-form-button-right">
 

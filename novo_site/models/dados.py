@@ -11,6 +11,10 @@ from django.utils import timezone
 from . import *
 from datetime import datetime
 class Clientes(models.Model):
+    options_choices = (
+        ('M', ' Masculino '),
+        ('F', 'Feimino '),
+    )
     cpf = models.CharField("cpf",primary_key=True,max_length=11)
     nome_cli = models.CharField("nome",max_length=200,null=True)
     endereco_cli = models.CharField("endereco",max_length=200,null=True)
@@ -20,6 +24,7 @@ class Clientes(models.Model):
     cep_cli = models.CharField("cep",max_length=10,null=True)
     Email_cli = models.CharField("email",max_length=200,null=True)
     telefone1_cli = models.CharField("telefone",max_length=11,null=True)
+    sexo_cli = models.CharField("sexo",max_length=1,choices=options_choices )
     class Meta:
         verbose_name="cliente"
         verbose_name_plural="clientes"

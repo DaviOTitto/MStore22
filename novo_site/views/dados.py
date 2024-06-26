@@ -96,68 +96,97 @@ def adciona_automatico(request):
 
 def adcinona_cliente(request):
     booleana = False
-    con_mysql = conectaMysql()
-    cur_mysql = con_mysql.cursor()
-    data_hora = datetime.today().strftime("%Y/%m/%d %H:%M:%S")
-    data =  datetime.today().strftime("%Y/%m/%d")
-    print(data)
+   
             #inserção de dados por backend
-    sql = '''INSERT into cliente 
-        (`cpnjcpf_cli`,`nome_cli`,`endereco_cli`,`bairro_cli`,`cidade_cli`,
-        `estado_cli`,`cep_cli`,`email_cli`,`telefone1_cli`,`senha_cli`,`est_civ_cli`,`índice_cli`)
-                values(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)'''
-               
-    lista_insert = [3,data,"51738180697",data_hora,1]                      
+                      
     order_forms = Clientes()
     if request.method == 'POST':
-        forms = ClientesForm(request.POST, request.FILES,
-                          instance=order_forms, prefix='main')      
-  #   ESCOLHA = request.POST.get("opcaoRadio",False)
-  #   print(ESCOLHA)    
-  #   order_forms.escolha_radio =str(ESCOLHA)
-  #   print(order_forms.escolha_radio)      
-        cliente_instance.cpf = forms.cleaned_data['cpnjcpf_cli']
-        cliente_instance.nome_cli = forms.cleaned_data['nome_cli']
-        cliente_instance.endereco_cli = forms.cleaned_data['endereco_cli']
-        cliente_instance.bairro_cli = form.cleaned_data["bairro_cli"]
-        cliente_instance.cidade_cli = forms.cleaned_data['cidade_cli']
-        cliente_instance.estado_cli = forms.cleaned_data['estado_cli']
-        cliente_instance.cep_cli = forms.cleaned_data['cep_cli']
-        cliente_instance.Email_cli = forms.cleaned_data['email_cli']
-        cliente_instance.telefone1_cli = forms.cleaned_data['telefone1_cli']
-        cliente_lista = [
-                        cliente_instance.cpf,
-                        cliente_instance.nome_cli,
-                        cliente_instance.endereco_cli,
-                        cliente_instance.cidade_cli,
-                        cliente_instance.estado_cli,
-                        cliente_instance.cep_cli,
-                        cliente_instance.Email_cli,
-                        cliente_instance.telefone1_cli,
-                        1,5,0
-                    ]
-        print(cliente_lista)
-        try: 
-            print("entrou no try ")
-            cur_mysql.execute(sql,lista_insert),
-            print("executou o sql executou sql do Pedido ") 
-            con_mysql.commit()
-            booleana=True
-        except:
-            print("não foi")
-            con_mysql.rollback()
-            booleana=False
+      forms = ClientesForm(request.POST, request.FILES,
+                          instance=order_forms, prefix='main')          
+      if forms.is_valid() :
+        teste_instance = forms.save()      
+        print("entrou no if ")
+       
         if forms.is_valid() :
-            teste_instance = forms.save()
-       # return HttpResponseRedirect(resolve_url('detalhe_formulario',teste_instance.pk))
+            print("form valido")
+            forms.save()
+            cliente_lista = listar_clientes(request)
+            print(cliente_lista)
+        
     else:
         forms = ClientesForm(instance=order_forms, prefix='main')
+        print(forms)
+        print("ta no else ")
         
     context = {
         'forms': forms,
       }
-
     return render(request,'cadastro.html',context)
+    
+def listar_clientes(request):
+    # Busque todos os registros do modelo Clientes
+    clientes = Clientes.objects.all()
+    con_mysql = conectaMysql()
+    cur_mysql = con_mysql.cursor()
+    data_hora = datetime.today().strftime("%Y/%m/%d %H:%M:%S")
+    data =  datetime.today().strftime("%Y/%m/%d")
+    sql = '''INSERT into cliente 
+        (`cpnjcpf_cli`,`nome_cli`,`endereco_cli`,
+        `bairro_cli`,`cidade_cli`,`estado_cli`,
+        `cep_cli`,`email_cli`,`telefone1_cli`,
+        `senha_cli`,`est_civ_cli`,`indice_cli`,
+        `sexo_cli`)
+                values(%s,%s,%s,
+                %s,%s,%s,
+                %s,%s,%s,
+                %s,%s,%s,
+                %s)'''
+               
+    print(data)
+    # Crie uma lista para armazenar os dados
+    
+
+    # Itere sobre os registros e pegue os valores dos campos
+    for cliente in clientes:
+        # Acesse os valores dos campos individualmente
+        cpf = cliente.cpf
+        nome = cliente.nome_cli
+        endereco = cliente.endereco_cli
+        cidade = cliente.cidade_cli
+        bairro = cliente.bairro_cli
+        estado = cliente.estado_cli
+        cep = cliente.cep_cli
+        email = cliente.Email_cli
+        telefone = cliente.telefone1_cli
+        aux1 = 1
+        aux2 = 5
+        aux3 = 1
+        sexo_cli = cliente.sexo_cli
+        lista_clientes = [cpf,nome,endereco,cidade,bairro,estado,cep,email,telefone,aux1,aux2,aux3,sexo_cli]
+
+
+        # Adicione os valores à lista
+       
+        print(lista_clientes)
+        try: 
+            print("entrou no try ")
+            cur_mysql.execute(sql,lista_clientes )
+            print("executou o sql executou sql do Pedido ") 
+            con_mysql.commit()
+            booleana=True
+        except :
+            print("não foi")
+            con_mysql.rollback()
+            booleana=False
+        lista_clientes.clear()
+        
+
+    # Agora você tem uma lista com os dados dos clientes
+    # Cada item da lista é um dicionário com os campos e valores correspondentes
+
+    return lista_clientes
+    
+
    
 
 
