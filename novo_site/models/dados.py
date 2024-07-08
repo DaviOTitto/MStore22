@@ -6,6 +6,7 @@ from django.shortcuts import render, resolve_url, get_object_or_404, redirect
 from django.http import HttpResponseRedirect
 from django.utils.formats import number_format
 from django.utils import timezone
+from simplecep import resolve_cep
 
 
 from . import *
@@ -24,10 +25,12 @@ class Clientes(models.Model):
     cep_cli = models.CharField("cep",max_length=10,null=True)
     Email_cli = models.CharField("email",max_length=200,null=True)
     telefone1_cli = models.CharField("telefone",max_length=11,null=True)
-    sexo_cli = models.CharField("sexo",max_length=1,choices=options_choices )
+    sexo_cli = models.CharField("sexo",max_length=1,choices=options_choices)
     class Meta:
         verbose_name="cliente"
         verbose_name_plural="clientes"
+
+    
 class Pedido(models.Model):
     codped_ped = models.AutoField("Codigo",primary_key=True)
     cnpj = models.CharField("cnpj",max_length=14,null=True ,blank =True)

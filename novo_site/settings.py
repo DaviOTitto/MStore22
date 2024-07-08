@@ -61,6 +61,7 @@ INSTALLED_APPS = [
     # thirty apps
     'django.contrib.postgres',
     'bootstrapform',
+    'simplecep',
     'widget_tweaks',
     'django_extensions',
     'stdimage',

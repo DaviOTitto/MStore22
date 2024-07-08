@@ -24,10 +24,10 @@ from openpyxl import load_workbook
 from openpyxl_image_loader import SheetImageLoader
 import PIL.Image as Image
 import MySQLdb
-
+from simplecep import resolve_cep
 from ..models import *
 from ..forms import *
-
+ 
 
 
 home = TemplateView.as_view(template_name='pag2.html')
@@ -163,7 +163,8 @@ def listar_clientes(request):
         aux3 = 1
         sexo_cli = cliente.sexo_cli
         lista_clientes = [cpf,nome,endereco,cidade,bairro,estado,cep,email,telefone,aux1,aux2,aux3,sexo_cli]
-
+        endereco_test = resolve_cep(cep)
+        print(endereco_test)
 
         # Adicione os valores à lista
        
