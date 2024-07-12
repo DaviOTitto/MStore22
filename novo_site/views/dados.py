@@ -27,7 +27,7 @@ import MySQLdb
 from simplecep import resolve_cep
 from ..models import *
 from ..forms import *
- 
+import brazilcep 
 
 
 home = TemplateView.as_view(template_name='pag2.html')
@@ -165,9 +165,16 @@ def listar_clientes(request):
         lista_clientes = [cpf,nome,endereco,cidade,bairro,estado,cep,email,telefone,aux1,aux2,aux3,sexo_cli]
         endereco_test = resolve_cep(cep)
         print(endereco_test)
-
+        address = brazilcep.get_address_from_cep(cep)
+        
         # Adicione os valores à lista
-       
+        if address:
+            street = address.get("street", "")
+            district = address.get("district", "")
+            estado = address.get("uf", "")
+            print('rua' + street)
+            print('bairro' + district)
+            print('estado' +  estado)
         print(lista_clientes)
         try: 
             print("entrou no try ")
@@ -198,12 +205,12 @@ def listar_clientes(request):
 def completa_lista(request):
     
     if request.method == 'POST':  
-        form = CadastrosForm(request.POST)
+        form = Clientes(request.POST)
         if form.is_valid():
             form = form.save()
-            #return HttpResponseRedirect(resolve_url('core:cadastros_detail', form.pk))
+            return HttpResponseRedirect(resolve_url('core:cadastros_detail', form.pk))
     else:
-        form = CadastrosForm()
+        form = Clientes()
     context = {
         'form':form,
     }
