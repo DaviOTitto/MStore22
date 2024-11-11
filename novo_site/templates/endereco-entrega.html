@@ -1,0 +1,293 @@
+{% load static %}
+{% load bootstrap %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    {% block title %}
+    <title>erro 404</title>
+    {% endblock title %}
+
+    <!-- Bootstrap Core CSS -->
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="{% static 'css/rgscale.css' %}" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="{% static 'font-awesome/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet"
+        type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
+
+    <style>
+        body {
+            font-family: helvetica, arial, sans-serif;
+            background-color: #2e2e31;
+            min-height: 224px;
+            background-image: url(https://images.pexels.com/photos/261679/pexels-photo-261679.jpeg);
+            background-size: cover;
+            background-repeat: repeat;
+            background-position: center top;
+            background-attachment: fixed;
+        }
+
+
+        .get-in-touch {
+            max-width: 600px;
+            margin: 50px auto;
+            position: relative;
+        }
+
+        .get-in-touch .title {
+            text-align: right;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 3.2em;
+            line-height: 48px;
+            padding-bottom: 48px;
+            color: #5543ca;
+            background: #5543ca;
+            background: -moz-linear-gradient(left, #33b8fa 0%, #1d3bc3 100%) !important;
+            background: -webkit-linear-gradient(left, #33b8fa 0%, #1d3bc3 100%) !important;
+            background: linear-gradient(to right, #33b8fa 0%, #1d3bc3 100%) !important;
+            -webkit-background-clip: text !important;
+            -webkit-text-fill-color: transparent !important;
+        }
+
+        .contact-form .form-field {
+            position: relative;
+            margin: 32px 0;
+        }
+
+        .contact-form .input-text {
+            display: block;
+            width: 100%;
+            height: 36px;
+            border-width: 0 0 2px 0;
+            border-color: #2e13e2;
+            font-size: 18px;
+            line-height: 26px;
+            font-weight: 400;
+        }
+
+        .contact-form .input-text:focus {
+            outline: none;
+        }
+
+        .contact-form .input-text:focus+.label,
+        .contact-form .input-text.not-empty+.label {
+            -webkit-transform: translateY(-24px);
+            transform: translateY(-24px);
+        }
+
+        .contact-form .label {
+            position: absolute;
+            left: 20px;
+            bottom: 11px;
+            font-size: 18px;
+            line-height: 16px;
+            font-weight: 400;
+            color: #161aea;
+            cursor: text;
+            transition: -webkit-transform .2s ease-in-out;
+            transition: transform .2s ease-in-out;
+            transition: transform .2s ease-in-out,
+                -webkit-transform .2s ease-in-out;
+        }
+
+        .contact-form .submit-btn {
+            display: inline-block;
+            background-color: #000;
+            background-image: linear-gradient(125deg, #009dff, #064497);
+            color: #fff;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 16px;
+            padding: 8px 16px;
+            border: none;
+            width: 200px;
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+    <!-- MENU -->
+    <!-- Intro Header -->
+    <header class="intro">
+        <div class="cs-widgets" style="
+    text-align: right;
+    ">
+<header class="intro">
+    <div class="cs-widgets" style="text-align: right;">
+        <section class="get-in-touch">
+            <form class="contact-form row" method="POST">
+                {% csrf_token %}
+                <div class="form-field col-lg-6">
+                    <input id="cpf" name="cpf" class="input-text js-input" type="text"
+                           value="{{ dados_cliente.0|default_if_none:'' }}" required>
+                    <label class="label" for="cpf">CPF</label>
+                </div>
+                <div class="form-field col-lg-6">
+                    <input id="cep_cli" name="cep_cli" class="input-text js-input" type="text"
+                           value="{{ dados_cliente.1|default_if_none:'' }}" required>
+                    <label class="label" for="cep_cli">CEP</label>
+                </div>
+                <div class="form-field col-lg-6">
+                    <input id="endereco_cli" name="endereco_cli" class="input-text js-input" type="text"
+                           value="{{ dados_cliente.2|default_if_none:'' }}" required>
+                    <label class="label" for="endereco_cli">Endereço</label>
+                </div>
+                <div class="form-field col-lg-6">
+                    <input id="bairro_cli" name="bairro_cli" class="input-text js-input" type="text"
+                           value="{{ dados_cliente.4|default_if_none:'' }}" required>
+                    <label class="label" for="bairro_cli">Bairro</label>
+                </div>
+                <div class="form-field col-lg-6">
+                    <input id="cidade_cli" name="cidade_cli" class="input-text js-input" type="text"
+                           value="{{ dados_cliente.3|default_if_none:'' }}" required>
+                    <label class="label" for="cidade_cli">Cidade</label>
+                </div>
+                <div class="form-field col-lg-6">
+                    <input id="cidade_cli" name="estado_cli" class="input-text js-input" type="text"
+                           value="{{ dados_cliente.5|default_if_none:'' }}" required>
+                    <label class="label" for="estado_cli">EStado</label>
+                </div>
+                <div class="form-field col-lg-6">
+                    <input id="email_cli" name="email_cli" class="input-text js-input" type="email"
+                           value="{{ dados_cliente.6|default_if_none:'' }}" required>
+                    <label class="label" for="email_cli">Email</label>
+                </div>
+                <div class="form-field col-lg-6">
+                    <input id="telefone1_cli" name="telefone1_cli" class="input-text js-input" type="text"
+                           value="{{ dados_cliente.7|default_if_none:'' }}" required>
+                    <label class="label" for="telefone1_cli">Telefone</label>
+                </div>
+                <div class="form-field col-lg-12">
+                    <input class="submit-btn" type="submit" value="Salvar">
+                </div>
+            </form>
+        </section>
+    </div>
+</header>
+            <footer>
+                <div class="container text-center">
+                    <p><img src="../static/img/Mstore.jpg"></p>
+                </div>
+            </footer>
+            <script>
+                const cep = document.querySelector('#cep_cli');
+                const bairro = document.querySelector('#bairro_cli');
+                const end = document.querySelector('#endereco_cli');
+                const cidade = document.querySelector('#cidade_cli');
+                const message = document.querySelector('#message');
+                const cpf = document.querySelector('#cpf');
+                const message_cpf = document.querySelector('#message_cpf');
+                cpf.addEventListener('focusout', async () => {
+                    try {
+                        const onlyNumbers = /^[0-9]+$/;
+                        const cpfValid = /^[0-9]{11}$/;
+
+                        // Verifica se o CPF contém apenas números
+                        if (!onlyNumbers.test(cpf.value)) {
+                            throw { cpf_error: 'Sem letras e sem caracteres especiais' };
+                        }
+
+                        // Verifica se o CPF tem exatamente 11 dígitos
+                        if (!cpfValid.test(cpf.value)) {
+                            throw { cpf_error: 'CPF inválido' };
+                        }
+
+                        let sum = 0;
+                        let remainder;
+
+                        // Verifica se o CPF é uma sequência de dígitos iguais
+                        if (cpf.value === "00000000000") {
+                            throw { cpf_error: 'CPF inválido' };
+                        }
+
+                        // Calcula o primeiro dígito verificador
+                        for (let i = 1; i <= 9; i++) {
+                            sum += parseInt(cpf.value.substring(i - 1, i)) * (11 - i);
+                        }
+                        remainder = (sum * 10) % 11;
+                        if (remainder === 10 || remainder === 11) remainder = 0;
+
+                        if (remainder !== parseInt(cpf.value.substring(9, 10))) {
+                            throw { cpf_error: 'CPF inválido' };
+                        }
+
+                        sum = 0;
+
+                        // Calcula o segundo dígito verificador
+                        for (let i = 1; i <= 10; i++) {
+                            sum += parseInt(cpf.value.substring(i - 1, i)) * (12 - i);
+                        }
+                        remainder = (sum * 10) % 11;
+                        if (remainder === 10 || remainder === 11) remainder = 0;
+
+                        if (remainder !== parseInt(cpf.value.substring(10, 11))) {
+                            throw { cpf_error: 'CPF inválido' };
+                        }
+
+                    } catch (error) {
+                        if (error?.cpf_error) {
+                            message_cpf.textContent = error.cpf_error;  // Corrigido para error.cpf_error
+                            setTimeout(() => {
+                                message_cpf.textContent = '';
+                            }, 10000);
+                        }
+                        console.log(error);
+                    }
+                });
+                cep.addEventListener('focusout', async () => {
+                    try {
+                        const onlyNumbers = /^[0-9]+$/;
+                        const cepValid = /^[0-9]{8}$/;
+                        console.log(cep.value);
+
+                        if (!onlyNumbers.test(cep.value) || !cepValid.test(cep.value)) {
+                            throw { cep_error: 'CEP inválido' };
+                        }
+
+                        const response = await fetch(`https://viacep.com.br/ws/${cep.value}/json/`);
+
+                        if (!response.ok) {
+                            throw new Error('Erro ao buscar CEP');
+                        }
+
+                        const responseCep = await response.json();
+
+                        if (responseCep.erro) {
+                            throw { cep_error: 'CEP não encontrado' };
+                        }
+
+                        bairro.value = responseCep.bairro;
+                        end.value = responseCep.logradouro;
+                        cidade.value = responseCep.localidade;
+                        message.textContent = '';  // Limpar mensagem de erro
+
+                    } catch (error) {
+                        if (error?.cep_error) {
+                            message.textContent = error.cep_error;
+                            setTimeout(() => {
+                                message.textContent = '';
+                            }, 10000);
+                        }
+                        console.log(error);
+                    }
+                });
+
+            </script>
+</body>
+
+</html>

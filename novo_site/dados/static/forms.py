@@ -10,7 +10,7 @@ from datetime import timedelta
 from django.core.paginator import Paginator
 from django.contrib import messages
 from datetime import datetime
-from .models.dados import *
+from .models.dados import * 
 
 class  pedidoForm(forms.ModelForm):
     class Meta:

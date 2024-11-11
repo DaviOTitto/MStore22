@@ -6,7 +6,7 @@ from django.shortcuts import render, resolve_url, get_object_or_404, redirect
 from django.http import HttpResponseRedirect
 from django.utils.formats import number_format
 from django.utils import timezone
-from simplecep import resolve_cep
+#from simplecep import resolve_cep
 
 
 from . import *
@@ -35,7 +35,7 @@ class Pedido(models.Model):
     codped_ped = models.AutoField("Codigo",primary_key=True)
     cnpj = models.CharField("cnpj",max_length=14,null=True ,blank =True)
     hora_ped = models.DateTimeField("Data e hora ",null=True ,blank =True,auto_now_add=True,auto_now=False)
-   
+    
     class Meta:
         verbose_name = 'pedido'
         verbose_name_plural = 'pedidos'

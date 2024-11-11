@@ -1,9 +1,13 @@
 /* Yata Editor v1.10.0 | CSS */
-.owl-carousel,.owl-carousel .owl-item,.owl-theme .owl-dots,.owl-theme .owl-nav {
+.owl-carousel,
+.owl-carousel .owl-item,
+.owl-theme .owl-dots,
+.owl-theme .owl-nav {
     -webkit-tap-highlight-color: transparent
 }
 
-.cs-product-modal,.fadeIn {
+.cs-product-modal,
+.fadeIn {
     -moz-animation: fadeIn .4s
 }
 
@@ -33,16 +37,17 @@
 .owl-carousel .owl-stage-outer {
     position: relative;
     overflow: hidden;
-    -webkit-transform: translate3d(0,0,0)
+    -webkit-transform: translate3d(0, 0, 0)
 }
 
-.owl-carousel .owl-item,.owl-carousel .owl-wrapper {
+.owl-carousel .owl-item,
+.owl-carousel .owl-wrapper {
     -webkit-backface-visibility: hidden;
     -moz-backface-visibility: hidden;
     -ms-backface-visibility: hidden;
-    -webkit-transform: translate3d(0,0,0);
-    -moz-transform: translate3d(0,0,0);
-    -ms-transform: translate3d(0,0,0)
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0)
 }
 
 .owl-carousel .owl-item {
@@ -58,11 +63,14 @@
     width: 100%
 }
 
-.owl-carousel .owl-dots.disabled,.owl-carousel .owl-nav.disabled {
+.owl-carousel .owl-dots.disabled,
+.owl-carousel .owl-nav.disabled {
     display: none
 }
 
-.owl-carousel .owl-dot,.owl-carousel .owl-nav .owl-next,.owl-carousel .owl-nav .owl-prev {
+.owl-carousel .owl-dot,
+.owl-carousel .owl-nav .owl-next,
+.owl-carousel .owl-nav .owl-prev {
     cursor: pointer;
     -webkit-user-select: none;
     -khtml-user-select: none;
@@ -71,17 +79,20 @@
     user-select: none
 }
 
-.cs-form-group .cs-form-file-btn,.owl-carousel.owl-drag .owl-item {
+.cs-form-group .cs-form-file-btn,
+.owl-carousel.owl-drag .owl-item {
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none
 }
 
-.owl-carousel .owl-nav button.owl-next,.owl-carousel .owl-nav button.owl-prev,.owl-carousel button.owl-dot {
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel button.owl-dot {
     background: 0 0;
     color: inherit;
     border: none;
-    padding: 0!important;
+    padding: 0 !important;
     font: inherit
 }
 
@@ -160,7 +171,8 @@
     transition: opacity .4s ease
 }
 
-.owl-carousel .owl-item .owl-lazy:not([src]),.owl-carousel .owl-item .owl-lazy[src^=""] {
+.owl-carousel .owl-item .owl-lazy:not([src]),
+.owl-carousel .owl-item .owl-lazy[src^=""] {
     max-height: 0
 }
 
@@ -190,10 +202,11 @@
 }
 
 .owl-carousel .owl-video-play-icon:hover {
-    transform: scale(1.3,1.3)
+    transform: scale(1.3, 1.3)
 }
 
-.owl-carousel .owl-video-playing .owl-video-play-icon,.owl-carousel .owl-video-playing .owl-video-tn {
+.owl-carousel .owl-video-playing .owl-video-play-icon,
+.owl-carousel .owl-video-playing .owl-video-tn {
     display: none
 }
 
@@ -240,7 +253,10 @@
     cursor: default
 }
 
-.cs-btn-show-more,.cs-form-widget .cs-button,.cs-gallery[data-full-image] img.owl-lazy:hover,.cs-pointer {
+.cs-btn-show-more,
+.cs-form-widget .cs-button,
+.cs-gallery[data-full-image] img.owl-lazy:hover,
+.cs-pointer {
     cursor: pointer
 }
 
@@ -254,7 +270,8 @@
 
 .owl-theme .owl-dots .owl-dot {
     display: inline-block;
-    zoom:1}
+    zoom: 1
+}
 
 .owl-theme .owl-dots .owl-dot span {
     width: 10px;
@@ -267,7 +284,8 @@
     border-radius: 30px
 }
 
-.owl-theme .owl-dots .owl-dot.active span,.owl-theme .owl-dots .owl-dot:hover span {
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
     background: #869791
 }
 
@@ -283,7 +301,8 @@
     float: none
 }
 
-.cs-clearfix::after,.cs-widgets::after {
+.cs-clearfix::after,
+.cs-widgets::after {
     content: "";
     display: block;
     clear: both
@@ -302,14 +321,14 @@
 }
 
 .cs-display-none {
-    display: none!important
+    display: none !important
 }
 
 .cs-center {
-    display: block!important;
-    margin-left: auto!important;
-    margin-right: auto!important;
-    float: none!important
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    float: none !important
 }
 
 .cs-replace {
@@ -320,7 +339,9 @@
     word-spacing: 999px
 }
 
-.cs-list,.cs-list li,.cs-list-auto {
+.cs-list,
+.cs-list li,
+.cs-list-auto {
     width: 100%;
     float: left;
     display: block
@@ -335,7 +356,8 @@
     text-decoration: none
 }
 
-.cs-link:focus,.cs-link:hover {
+.cs-link:focus,
+.cs-link:hover {
     text-decoration: underline
 }
 
@@ -348,7 +370,9 @@
 }
 
 @-webkit-keyframes fadeIn {
-    20%,from {
+
+    20%,
+    from {
         opacity: 0
     }
 
@@ -358,7 +382,9 @@
 }
 
 @-moz-keyframes fadeIn {
-    20%,from {
+
+    20%,
+    from {
         opacity: 0
     }
 
@@ -368,7 +394,9 @@
 }
 
 @keyframes fadeIn {
-    20%,from {
+
+    20%,
+    from {
         opacity: 0
     }
 
@@ -383,7 +411,9 @@
 }
 
 @-webkit-keyframes fadeOut {
-    20%,from {
+
+    20%,
+    from {
         opacity: 1;
         visibility: visible
     }
@@ -395,7 +425,9 @@
 }
 
 @-moz-keyframes fadeOut {
-    20%,from {
+
+    20%,
+    from {
         opacity: 1;
         visibility: visible
     }
@@ -407,7 +439,9 @@
 }
 
 @keyframes fadeOut {
-    20%,from {
+
+    20%,
+    from {
         opacity: 1;
         visibility: visible
     }
@@ -508,7 +542,9 @@
 }
 
 @-webkit-keyframes fire {
-    0%,100% {
+
+    0%,
+    100% {
         -webkit-transform: scale(1) translateY(0) rotate(180deg);
         opacity: 1
     }
@@ -530,7 +566,9 @@
 }
 
 @-moz-keyframes fire {
-    0%,100% {
+
+    0%,
+    100% {
         -moz-transform: scale(1) translateY(0) rotate(180deg);
         opacity: 1
     }
@@ -552,7 +590,9 @@
 }
 
 @keyframes fire {
-    0%,100% {
+
+    0%,
+    100% {
         -webkit-transform: scale(1) translateY(0) rotate(180deg);
         -moz-transform: scale(1) translateY(0) rotate(180deg);
         -ms-transform: scale(1) translateY(0) rotate(180deg);
@@ -595,12 +635,14 @@
         opacity: 1
     }
 
-    50%,70% {
+    50%,
+    70% {
         -webkit-transform: translateY(10px);
         opacity: 1
     }
 
-    100%,90% {
+    100%,
+    90% {
         -webkit-transform: translateY(10px);
         opacity: 0
     }
@@ -612,12 +654,14 @@
         opacity: 1
     }
 
-    50%,70% {
+    50%,
+    70% {
         -moz-transform: translateY(10px);
         opacity: 1
     }
 
-    100%,90% {
+    100%,
+    90% {
         -moz-transform: translateY(10px);
         opacity: 0
     }
@@ -633,7 +677,8 @@
         opacity: 1
     }
 
-    50%,70% {
+    50%,
+    70% {
         -webkit-transform: translateY(10px);
         -moz-transform: translateY(10px);
         -ms-transform: translateY(10px);
@@ -642,7 +687,8 @@
         opacity: 1
     }
 
-    100%,90% {
+    100%,
+    90% {
         -webkit-transform: translateY(10px);
         -moz-transform: translateY(10px);
         -ms-transform: translateY(10px);
@@ -663,7 +709,9 @@
         opacity: 1
     }
 
-    100%,75%,85% {
+    100%,
+    75%,
+    85% {
         -webkit-transform: translateY(10%);
         opacity: 0
     }
@@ -680,7 +728,9 @@
         opacity: 1
     }
 
-    100%,75%,85% {
+    100%,
+    75%,
+    85% {
         -moz-transform: translateY(10%);
         opacity: 0
     }
@@ -705,7 +755,9 @@
         opacity: 1
     }
 
-    100%,75%,85% {
+    100%,
+    75%,
+    85% {
         -webkit-transform: translateY(10%);
         -moz-transform: translateY(10%);
         -ms-transform: translateY(10%);
@@ -716,27 +768,38 @@
 }
 
 @-webkit-keyframes shake {
-    0%,100%,50% {
+
+    0%,
+    100%,
+    50% {
         -webkit-transform: rotate(0)
     }
 
-    25%,75% {
+    25%,
+    75% {
         -webkit-transform: rotate(-2deg)
     }
 }
 
 @-moz-keyframes shake {
-    0%,100%,50% {
+
+    0%,
+    100%,
+    50% {
         -moz-transform: rotate(0)
     }
 
-    25%,75% {
+    25%,
+    75% {
         -moz-transform: rotate(-2deg)
     }
 }
 
 @keyframes shake {
-    0%,100%,50% {
+
+    0%,
+    100%,
+    50% {
         -webkit-transform: rotate(0);
         -moz-transform: rotate(0);
         -ms-transform: rotate(0);
@@ -744,7 +807,8 @@
         transform: rotate(0)
     }
 
-    25%,75% {
+    25%,
+    75% {
         -webkit-transform: rotate(-2deg);
         -moz-transform: rotate(-2deg);
         -ms-transform: rotate(-2deg);
@@ -754,7 +818,9 @@
 }
 
 @-webkit-keyframes fadeSlideUpIn {
-    0%,20% {
+
+    0%,
+    20% {
         -webkit-transform: translateY(40px);
         opacity: 0
     }
@@ -766,7 +832,9 @@
 }
 
 @-moz-keyframes fadeSlideUpIn {
-    0%,20% {
+
+    0%,
+    20% {
         -moz-transform: translateY(40px);
         opacity: 0
     }
@@ -778,7 +846,9 @@
 }
 
 @keyframes fadeSlideUpIn {
-    0%,20% {
+
+    0%,
+    20% {
         -webkit-transform: translateY(40px);
         -moz-transform: translateY(40px);
         -ms-transform: translateY(40px);
@@ -842,7 +912,9 @@
 }
 
 @-webkit-keyframes fadeSlideLeftIn {
-    0%,20% {
+
+    0%,
+    20% {
         -webkit-transform: translateX(30px);
         opacity: 0
     }
@@ -854,7 +926,9 @@
 }
 
 @-moz-keyframes fadeSlideLeftIn {
-    0%,20% {
+
+    0%,
+    20% {
         -moz-transform: translateX(30px);
         opacity: 0
     }
@@ -866,7 +940,9 @@
 }
 
 @keyframes fadeSlideLeftIn {
-    0%,20% {
+
+    0%,
+    20% {
         -webkit-transform: translateX(30px);
         -moz-transform: translateX(30px);
         -ms-transform: translateX(30px);
@@ -930,7 +1006,9 @@
 }
 
 @-webkit-keyframes fadeSlideRightIn {
-    0%,20% {
+
+    0%,
+    20% {
         -webkit-transform: translateX(-30px);
         opacity: 0
     }
@@ -942,7 +1020,9 @@
 }
 
 @-moz-keyframes fadeSlideRightIn {
-    0%,20% {
+
+    0%,
+    20% {
         -moz-transform: translateX(-30px);
         opacity: 0
     }
@@ -954,7 +1034,9 @@
 }
 
 @keyframes fadeSlideRightIn {
-    0%,20% {
+
+    0%,
+    20% {
         -webkit-transform: translateX(-30px);
         -moz-transform: translateX(-30px);
         -ms-transform: translateX(-30px);
@@ -1024,7 +1106,7 @@
     margin: -1px;
     padding: 0;
     overflow: hidden;
-    clip: rect(0,0,0,0);
+    clip: rect(0, 0, 0, 0);
     border: 0
 }
 
@@ -1035,9 +1117,9 @@
 }
 
 .cs-menu .cs-menu-items>li>a {
-    -webkit-transition: background .25s ease-in,color .25s ease-in;
-    -moz-transition: background .25s ease-in,color .25s ease-in;
-    transition: background .25s ease-in,color .25s ease-in
+    -webkit-transition: background .25s ease-in, color .25s ease-in;
+    -moz-transition: background .25s ease-in, color .25s ease-in;
+    transition: background .25s ease-in, color .25s ease-in
 }
 
 .cs-menu input:checked~.cs-menu-overlay {
@@ -1045,21 +1127,42 @@
     opacity: 1
 }
 
-.cs-video-widget.cs-widget-empty .cs-video-player,.cs-widget-empty.cs-button-widget .cs-button,.cs-widget-empty.cs-form-widget form,.cs-widget-empty.cs-sale-widget .cs-sale-wrapper {
+.cs-video-widget.cs-widget-empty .cs-video-player,
+.cs-widget-empty.cs-button-widget .cs-button,
+.cs-widget-empty.cs-form-widget form,
+.cs-widget-empty.cs-sale-widget .cs-sale-wrapper {
     visibility: hidden
 }
 
-.cs-lines,.cs-section-full .cs-section-inner,.cs-section-full-content .cs-section-inner,.cs-section-inner {
+.cs-lines,
+.cs-section-full .cs-section-inner,
+.cs-section-full-content .cs-section-inner,
+.cs-section-inner {
     max-width: 940px;
     margin: 0 auto;
     z-index: 1
 }
 
-.cs-button-widget-empty p,.cs-code-widget-empty p,.cs-form-message,.cs-form-widget-empty p,.cs-gallery-widget-empty p,.cs-image-widget-empty p,.cs-sale-widget-empty p,.cs-social-widget-empty p,.cs-video-widget-empty p {
+.cs-button-widget-empty p,
+.cs-code-widget-empty p,
+.cs-form-message,
+.cs-form-widget-empty p,
+.cs-gallery-widget-empty p,
+.cs-image-widget-empty p,
+.cs-sale-widget-empty p,
+.cs-social-widget-empty p,
+.cs-video-widget-empty p {
     margin-bottom: 10px
 }
 
-.cs-button-widget-empty,.cs-code-widget-empty,.cs-form-widget-empty,.cs-gallery-widget-empty,.cs-image-widget-empty,.cs-sale-widget-empty,.cs-social-widget-empty,.cs-video-widget-empty {
+.cs-button-widget-empty,
+.cs-code-widget-empty,
+.cs-form-widget-empty,
+.cs-gallery-widget-empty,
+.cs-image-widget-empty,
+.cs-sale-widget-empty,
+.cs-social-widget-empty,
+.cs-video-widget-empty {
     -webkit-align-content: center;
     -moz-align-content: center;
     align-content: center;
@@ -1098,20 +1201,37 @@
     justify-content: center;
     -ms-flex-pack: center;
     background: #f5f5f5;
-    color: rgba(0,0,0,.25);
+    color: rgba(0, 0, 0, .25);
     font-weight: 600;
-    font-family: "Open Sans",verdana,arial,sans-serif;
+    font-family: "Open Sans", verdana, arial, sans-serif;
     font-size: 12px;
     height: 150px;
     padding: 30px 15px;
     text-align: center
 }
 
-.cs-boxes,.cs-menu .cs-menu-items,.grid {
+.cs-boxes,
+.cs-menu .cs-menu-items,
+.grid {
     -moz-box-lines: multiple
 }
 
-.cs-button-widget-empty p,.cs-button-widget-empty::before,.cs-code-widget-empty p,.cs-code-widget-empty::before,.cs-form-widget-empty p,.cs-form-widget-empty::before,.cs-gallery-widget-empty p,.cs-gallery-widget-empty::before,.cs-image-widget-empty p,.cs-image-widget-empty::before,.cs-sale-widget-empty p,.cs-sale-widget-empty::before,.cs-social-widget-empty p,.cs-social-widget-empty::before,.cs-video-widget-empty p,.cs-video-widget-empty::before {
+.cs-button-widget-empty p,
+.cs-button-widget-empty::before,
+.cs-code-widget-empty p,
+.cs-code-widget-empty::before,
+.cs-form-widget-empty p,
+.cs-form-widget-empty::before,
+.cs-gallery-widget-empty p,
+.cs-gallery-widget-empty::before,
+.cs-image-widget-empty p,
+.cs-image-widget-empty::before,
+.cs-sale-widget-empty p,
+.cs-sale-widget-empty::before,
+.cs-social-widget-empty p,
+.cs-social-widget-empty::before,
+.cs-video-widget-empty p,
+.cs-video-widget-empty::before {
     -webkit-box-flex: 0;
     -moz-box-flex: 0;
     box-flex: 0;
@@ -1121,13 +1241,27 @@
     flex: 0 100%
 }
 
-.cs-button-widget-empty svg,.cs-code-widget-empty svg,.cs-form-widget-empty svg,.cs-gallery-widget-empty svg,.cs-image-widget-empty svg,.cs-sale-widget-empty svg,.cs-social-widget-empty svg,.cs-video-widget-empty svg {
-    fill: rgba(0,0,0,.25);
+.cs-button-widget-empty svg,
+.cs-code-widget-empty svg,
+.cs-form-widget-empty svg,
+.cs-gallery-widget-empty svg,
+.cs-image-widget-empty svg,
+.cs-sale-widget-empty svg,
+.cs-social-widget-empty svg,
+.cs-video-widget-empty svg {
+    fill: rgba(0, 0, 0, .25);
     width: 36px;
     height: 36px
 }
 
-.cs-button-widget-empty svg::before,.cs-code-widget-empty svg::before,.cs-form-widget-empty svg::before,.cs-gallery-widget-empty svg::before,.cs-image-widget-empty svg::before,.cs-sale-widget-empty svg::before,.cs-social-widget-empty svg::before,.cs-video-widget-empty svg::before {
+.cs-button-widget-empty svg::before,
+.cs-code-widget-empty svg::before,
+.cs-form-widget-empty svg::before,
+.cs-gallery-widget-empty svg::before,
+.cs-image-widget-empty svg::before,
+.cs-sale-widget-empty svg::before,
+.cs-social-widget-empty svg::before,
+.cs-video-widget-empty svg::before {
     display: none
 }
 
@@ -1135,11 +1269,93 @@ html {
     box-sizing: border-box
 }
 
-*,::after,::before {
+*,
+::after,
+::before {
     box-sizing: inherit
 }
 
-a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video {
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+q,
+ruby,
+s,
+samp,
+section,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video {
     margin: 0;
     padding: 0;
     border: 0;
@@ -1147,25 +1363,41 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
     background: 0 0
 }
 
-article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
     display: block
 }
 
-body::after,html::after {
+body::after,
+html::after {
     content: "";
     display: block;
     clear: both
 }
 
-ol,ul {
+ol,
+ul {
     list-style: none
 }
 
-blockquote,q {
+blockquote,
+q {
     quotes: none
 }
 
-blockquote::after,blockquote::before,q::after,q::before {
+blockquote::after,
+blockquote::before,
+q::after,
+q::before {
     content: "";
     content: none
 }
@@ -1177,14 +1409,15 @@ table {
 
 body {
     height: 100%;
-    font-family: "Open Sans",verdana,helvetica,arial,sans-serif
+    font-family: "Open Sans", verdana, helvetica, arial, sans-serif
 }
 
 .cs-lines {
     min-height: inherit
 }
 
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+@media all and (-ms-high-contrast:none),
+(-ms-high-contrast:active) {
     .cs-line {
         height: 100%
     }
@@ -1251,11 +1484,13 @@ body {
     color: #fff
 }
 
-.cs-button-widget,.cs-preview-widget-edit {
+.cs-button-widget,
+.cs-preview-widget-edit {
     text-align: center
 }
 
-.cs-button-widget .cs-button,.cs-preview-widget-edit .cs-button {
+.cs-button-widget .cs-button,
+.cs-preview-widget-edit .cs-button {
     -webkit-transition: opacity .2s ease-out;
     -moz-transition: opacity .2s ease-out;
     transition: opacity .2s ease-out;
@@ -1270,7 +1505,10 @@ body {
     position: relative
 }
 
-.cs-button-widget .cs-button:focus,.cs-button-widget .cs-button:hover,.cs-preview-widget-edit .cs-button:focus,.cs-preview-widget-edit .cs-button:hover {
+.cs-button-widget .cs-button:focus,
+.cs-button-widget .cs-button:hover,
+.cs-preview-widget-edit .cs-button:focus,
+.cs-preview-widget-edit .cs-button:hover {
     -webkit-transition: opacity .2s ease-out;
     -moz-transition: opacity .2s ease-out;
     transition: opacity .2s ease-out;
@@ -1310,11 +1548,16 @@ body {
     z-index: 1
 }
 
-.cs-button-theme-3,.cs-button-theme-4,.cs-button-theme-6,.cs-button-theme-8 {
-    box-shadow: inset 0 -4px rgba(0,0,0,.3)
+.cs-button-theme-3,
+.cs-button-theme-4,
+.cs-button-theme-6,
+.cs-button-theme-8 {
+    box-shadow: inset 0 -4px rgba(0, 0, 0, .3)
 }
 
-.cs-button-theme-4::before,.cs-button-theme-7::before,.cs-button-theme-8::before {
+.cs-button-theme-4::before,
+.cs-button-theme-7::before,
+.cs-button-theme-8::before {
     content: "";
     background: #fff;
     position: absolute;
@@ -1326,11 +1569,18 @@ body {
     z-index: 1
 }
 
-.cs-button-theme-5,.cs-button-theme-6,.cs-button-theme-7,.cs-button-theme-7::before,.cs-button-theme-8,.cs-button-theme-8::before {
+.cs-button-theme-5,
+.cs-button-theme-6,
+.cs-button-theme-7,
+.cs-button-theme-7::before,
+.cs-button-theme-8,
+.cs-button-theme-8::before {
     border-radius: 20px
 }
 
-.cs-button-theme-4::before,.cs-button-theme-6::before,.cs-button-theme-8::before {
+.cs-button-theme-4::before,
+.cs-button-theme-6::before,
+.cs-button-theme-8::before {
     margin: 2px 2px 4px
 }
 
@@ -1418,7 +1668,7 @@ body {
 }
 
 .cs-comment-widget iframe {
-    width: 100%!important
+    width: 100% !important
 }
 
 .cs-form-widget {
@@ -1443,7 +1693,8 @@ body {
     position: relative
 }
 
-.cs-form-widget .cs-button:focus,.cs-form-widget .cs-button:hover {
+.cs-form-widget .cs-button:focus,
+.cs-form-widget .cs-button:hover {
     -webkit-transition: opacity .2s ease-out;
     -moz-transition: opacity .2s ease-out;
     transition: opacity .2s ease-out;
@@ -1476,12 +1727,12 @@ body {
 
 .cs-form-widget .cs-button[disabled]::after {
     opacity: 1;
-    box-shadow: 0 0 10px 200px rgba(0,0,0,.7);
+    box-shadow: 0 0 10px 200px rgba(0, 0, 0, .7);
     border-color: #666 #fff #666 #666;
-    background: rgba(0,0,0,.6);
-    -webkit-transition: all 1s ease-in-out,border-color .2s ease-in-out,opacity .2s ease-in-out;
-    -moz-transition: all 1s ease-in-out,border-color .2s ease-in-out,opacity .2s ease-in-out;
-    transition: all 1s ease-in-out,border-color .2s ease-in-out,opacity .2s ease-in-out
+    background: rgba(0, 0, 0, .6);
+    -webkit-transition: all 1s ease-in-out, border-color .2s ease-in-out, opacity .2s ease-in-out;
+    -moz-transition: all 1s ease-in-out, border-color .2s ease-in-out, opacity .2s ease-in-out;
+    transition: all 1s ease-in-out, border-color .2s ease-in-out, opacity .2s ease-in-out
 }
 
 .cs-form-content {
@@ -1510,42 +1761,57 @@ body {
     min-height: 100px
 }
 
-.cs-form-group input,.cs-form-group textarea {
+.cs-form-group input,
+.cs-form-group textarea {
     padding: 7px 15px 10px
 }
 
-.cs-form-group input,.cs-form-group select,.cs-form-group textarea {
+.cs-form-group input,
+.cs-form-group select,
+.cs-form-group textarea {
     width: 100%;
     border: 1px solid #ccc;
     border-radius: 2px;
     color: #666;
     font-size: 14px;
-    font-family: Helvetica,Arial,sans-serif
+    font-family: Helvetica, Arial, sans-serif
 }
 
-.cs-form-group input::-webkit-input-placeholder,.cs-form-group select::-webkit-input-placeholder,.cs-form-group textarea::-webkit-input-placeholder {
-    color: rgba(102,102,102,.5)
+.cs-form-group input::-webkit-input-placeholder,
+.cs-form-group select::-webkit-input-placeholder,
+.cs-form-group textarea::-webkit-input-placeholder {
+    color: rgba(102, 102, 102, .5)
 }
 
-.cs-form-group input::-moz-placeholder,.cs-form-group select::-moz-placeholder,.cs-form-group textarea::-moz-placeholder {
-    color: rgba(102,102,102,.5)
+.cs-form-group input::-moz-placeholder,
+.cs-form-group select::-moz-placeholder,
+.cs-form-group textarea::-moz-placeholder {
+    color: rgba(102, 102, 102, .5)
 }
 
-.cs-form-group input:-moz-placeholder,.cs-form-group select:-moz-placeholder,.cs-form-group textarea:-moz-placeholder {
-    color: rgba(102,102,102,.5)
+.cs-form-group input:-moz-placeholder,
+.cs-form-group select:-moz-placeholder,
+.cs-form-group textarea:-moz-placeholder {
+    color: rgba(102, 102, 102, .5)
 }
 
-.cs-form-group input:-ms-input-placeholder,.cs-form-group select:-ms-input-placeholder,.cs-form-group textarea:-ms-input-placeholder {
-    color: rgba(102,102,102,.5)
+.cs-form-group input:-ms-input-placeholder,
+.cs-form-group select:-ms-input-placeholder,
+.cs-form-group textarea:-ms-input-placeholder {
+    color: rgba(102, 102, 102, .5)
 }
 
-.cs-form-group input.cs-field-error,.cs-form-group select.cs-field-error,.cs-form-group textarea.cs-field-error {
+.cs-form-group input.cs-field-error,
+.cs-form-group select.cs-field-error,
+.cs-form-group textarea.cs-field-error {
     border-color: #d85553
 }
 
-.cs-form-group input.cs-field-error:focus,.cs-form-group select.cs-field-error:focus,.cs-form-group textarea.cs-field-error:focus {
+.cs-form-group input.cs-field-error:focus,
+.cs-form-group select.cs-field-error:focus,
+.cs-form-group textarea.cs-field-error:focus {
     outline: 0;
-    box-shadow: 0 0 1px 2px rgba(216,85,83,.4)
+    box-shadow: 0 0 1px 2px rgba(216, 85, 83, .4)
 }
 
 .cs-form-group select {
@@ -1567,7 +1833,7 @@ body {
 
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
     .cs-form-group select {
-        padding-left:0;
+        padding-left: 0;
         text-indent: 10px
     }
 }
@@ -1606,7 +1872,7 @@ body {
 
 @media only screen and (min-width: 768px) {
     .cs-box {
-        -webkit-box-flex:1;
+        -webkit-box-flex: 1;
         -moz-box-flex: 1;
         box-flex: 1;
         -webkit-flex: 1 0 100px;
@@ -1709,7 +1975,8 @@ body {
         -ms-flex-align: center
     }
 
-    .cs-form-widget.cs-form-button-center .cs-form-group:last-child .cs-form-message-invalid,.cs-form-widget.cs-form-button-center .cs-form-group:last-child .cs-form-message-valid {
+    .cs-form-widget.cs-form-button-center .cs-form-group:last-child .cs-form-message-invalid,
+    .cs-form-widget.cs-form-button-center .cs-form-group:last-child .cs-form-message-valid {
         margin: 0 0 10px
     }
 }
@@ -1724,7 +1991,7 @@ body {
     top: 50%;
     right: 0;
     left: 0;
-    transform: translate(0,-50%)
+    transform: translate(0, -50%)
 }
 
 .grid {
@@ -1790,40 +2057,44 @@ body {
 }
 
 .cs-gallery-widget .owl-carousel .owl-item img {
-    -webkit-transform: translate(-50%,-50%);
-    -moz-transform: translate(-50%,-50%);
-    -ms-transform: translate(-50%,-50%);
-    -o-transform: translate(-50%,-50%);
-    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
     position: absolute
 }
 
-.cs-gallery-widget .owl-carousel .owl-next,.cs-gallery-widget .owl-carousel .owl-prev {
+.cs-gallery-widget .owl-carousel .owl-next,
+.cs-gallery-widget .owl-carousel .owl-prev {
     position: absolute;
     top: 0;
     height: 100%;
     width: 65px;
     margin: 0;
     outline: 0;
-    color: #f5f5f5!important
+    color: #f5f5f5 !important
 }
 
-.cs-gallery-widget .owl-carousel .owl-next:hover,.cs-gallery-widget .owl-carousel .owl-prev:hover {
+.cs-gallery-widget .owl-carousel .owl-next:hover,
+.cs-gallery-widget .owl-carousel .owl-prev:hover {
     background-color: transparent
 }
 
-.cs-gallery-widget .owl-carousel .owl-next:hover span,.cs-gallery-widget .owl-carousel .owl-prev:hover span {
+.cs-gallery-widget .owl-carousel .owl-next:hover span,
+.cs-gallery-widget .owl-carousel .owl-prev:hover span {
     text-shadow: 0 0 10px #30302F
 }
 
-.cs-gallery-widget .owl-carousel .owl-next span,.cs-gallery-widget .owl-carousel .owl-prev span {
+.cs-gallery-widget .owl-carousel .owl-next span,
+.cs-gallery-widget .owl-carousel .owl-prev span {
     display: flex;
     justify-content: center;
     font-size: 90px;
     padding-bottom: 24px;
-    text-shadow: 0 0 5px rgba(48,48,47,.5)
+    text-shadow: 0 0 5px rgba(48, 48, 47, .5)
 }
 
 .cs-gallery-widget .owl-carousel .owl-prev {
@@ -1839,10 +2110,12 @@ body {
     bottom: 0;
     left: 0;
     right: 0;
-    transform: translate(0,100%)
+    transform: translate(0, 100%)
 }
 
-.cs-gallery-widget .owl-carousel .owl-dots-as-number,.cs-gallery-widget .owl-carousel .owl-dots-as-square,.cs-gallery-widget .owl-carousel .owl-dots-as-thumbnail {
+.cs-gallery-widget .owl-carousel .owl-dots-as-number,
+.cs-gallery-widget .owl-carousel .owl-dots-as-square,
+.cs-gallery-widget .owl-carousel .owl-dots-as-thumbnail {
     display: -webkit-box;
     display: -moz-box;
     display: box;
@@ -1871,7 +2144,9 @@ body {
     -ms-flex-pack: center
 }
 
-.cs-gallery-widget .owl-carousel .owl-dots-as-number .owl-dot,.cs-gallery-widget .owl-carousel .owl-dots-as-square .owl-dot,.cs-gallery-widget .owl-carousel .owl-dots-as-thumbnail .owl-dot {
+.cs-gallery-widget .owl-carousel .owl-dots-as-number .owl-dot,
+.cs-gallery-widget .owl-carousel .owl-dots-as-square .owl-dot,
+.cs-gallery-widget .owl-carousel .owl-dots-as-thumbnail .owl-dot {
     -webkit-box-flex: 0;
     -moz-box-flex: 0;
     box-flex: 0;
@@ -1889,20 +2164,26 @@ body {
     margin: 1px;
     position: relative;
     border: 1px solid #adadad;
-    box-shadow: inset 2px 3px 5px 0 rgba(0,0,0,.18);
+    box-shadow: inset 2px 3px 5px 0 rgba(0, 0, 0, .18);
     background-color: #fff;
     counter-increment: gallery-item
 }
 
-.cs-gallery-widget .owl-carousel .owl-dots-as-number .owl-dot:last-of-type,.cs-gallery-widget .owl-carousel .owl-dots-as-square .owl-dot:last-of-type,.cs-gallery-widget .owl-carousel .owl-dots-as-thumbnail .owl-dot:last-of-type {
+.cs-gallery-widget .owl-carousel .owl-dots-as-number .owl-dot:last-of-type,
+.cs-gallery-widget .owl-carousel .owl-dots-as-square .owl-dot:last-of-type,
+.cs-gallery-widget .owl-carousel .owl-dots-as-thumbnail .owl-dot:last-of-type {
     margin-right: 0
 }
 
-.cs-gallery-widget .owl-carousel .owl-dots-as-number .owl-dot:first-of-type,.cs-gallery-widget .owl-carousel .owl-dots-as-square .owl-dot:first-of-type,.cs-gallery-widget .owl-carousel .owl-dots-as-thumbnail .owl-dot:first-of-type {
+.cs-gallery-widget .owl-carousel .owl-dots-as-number .owl-dot:first-of-type,
+.cs-gallery-widget .owl-carousel .owl-dots-as-square .owl-dot:first-of-type,
+.cs-gallery-widget .owl-carousel .owl-dots-as-thumbnail .owl-dot:first-of-type {
     margin-left: 0
 }
 
-.cs-gallery-widget .owl-carousel .owl-dots-as-number .owl-dot span,.cs-gallery-widget .owl-carousel .owl-dots-as-square .owl-dot span,.cs-gallery-widget .owl-carousel .owl-dots-as-thumbnail .owl-dot span {
+.cs-gallery-widget .owl-carousel .owl-dots-as-number .owl-dot span,
+.cs-gallery-widget .owl-carousel .owl-dots-as-square .owl-dot span,
+.cs-gallery-widget .owl-carousel .owl-dots-as-thumbnail .owl-dot span {
     width: 100%;
     height: 100%;
     background: 0 0;
@@ -1928,7 +2209,7 @@ body {
 
 .cs-gallery-widget .owl-carousel .owl-dots-as-number .owl-dot.active {
     background-color: #ebebeb;
-    box-shadow: 0 4px 5px 0 rgba(1,1,1,.18) inset
+    box-shadow: 0 4px 5px 0 rgba(1, 1, 1, .18) inset
 }
 
 .cs-gallery-widget .owl-carousel .owl-dots-as-number .owl-dot.active span::before {
@@ -1936,7 +2217,8 @@ body {
     font-weight: 700
 }
 
-.cs-gallery-widget .owl-carousel .owl-dots-as-square .owl-dot,.cs-gallery-widget .owl-carousel .owl-dots-as-thumbnail .owl-dot {
+.cs-gallery-widget .owl-carousel .owl-dots-as-square .owl-dot,
+.cs-gallery-widget .owl-carousel .owl-dots-as-thumbnail .owl-dot {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50%;
@@ -1944,7 +2226,8 @@ body {
     top: -18px
 }
 
-.cs-gallery-widget .owl-carousel .owl-dots-as-square .owl-dot::before,.cs-gallery-widget .owl-carousel .owl-dots-as-thumbnail .owl-dot::before {
+.cs-gallery-widget .owl-carousel .owl-dots-as-square .owl-dot::before,
+.cs-gallery-widget .owl-carousel .owl-dots-as-thumbnail .owl-dot::before {
     background-color: #f2f3f3;
     bottom: 0;
     content: "";
@@ -1957,7 +2240,8 @@ body {
     will-change: background-color
 }
 
-.cs-gallery-widget .owl-carousel .owl-dots-as-square .owl-dot.active::before,.cs-gallery-widget .owl-carousel .owl-dots-as-thumbnail .owl-dot.active::before {
+.cs-gallery-widget .owl-carousel .owl-dots-as-square .owl-dot.active::before,
+.cs-gallery-widget .owl-carousel .owl-dots-as-thumbnail .owl-dot.active::before {
     background-color: #000;
     opacity: .4
 }
@@ -2085,11 +2369,14 @@ body {
     height: 42px
 }
 
-.cs-language a img,.cs-language a svg,.cs-menu input:checked~.cs-menu-button .cs-ico-menu-close {
+.cs-language a img,
+.cs-language a svg,
+.cs-menu input:checked~.cs-menu-button .cs-ico-menu-close {
     display: block
 }
 
-.cs-language.cs-is-active,.cs-language:hover {
+.cs-language.cs-is-active,
+.cs-language:hover {
     -webkit-transition: border-color .1s ease-in;
     -moz-transition: border-color .1s ease-in;
     transition: border-color .1s ease-in;
@@ -2097,7 +2384,10 @@ body {
     border: 2px solid #01b1e7
 }
 
-.cs-language.cs-is-active a img,.cs-language.cs-is-active a svg,.cs-language:hover a img,.cs-language:hover a svg {
+.cs-language.cs-is-active a img,
+.cs-language.cs-is-active a svg,
+.cs-language:hover a img,
+.cs-language:hover a svg {
     border-radius: 50%;
     border: 2px solid #fff;
     width: 38px;
@@ -2105,22 +2395,22 @@ body {
 }
 
 .cs-menu input:checked~.cs-menu-items {
-    -webkit-transform: translate(0,0);
-    -moz-transform: translate(0,0);
-    -ms-transform: translate(0,0);
-    -o-transform: translate(0,0);
-    transform: translate(0,0);
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    transform: translate(0, 0);
     -webkit-transition: all .2s ease-out;
     -moz-transition: all .2s ease-out;
     transition: all .2s ease-out
 }
 
 .cs-menu input:checked~.cs-menu-button {
-    -webkit-transform: translate(-250px,0);
-    -moz-transform: translate(-250px,0);
-    -ms-transform: translate(-250px,0);
-    -o-transform: translate(-250px,0);
-    transform: translate(-250px,0);
+    -webkit-transform: translate(-250px, 0);
+    -moz-transform: translate(-250px, 0);
+    -ms-transform: translate(-250px, 0);
+    -o-transform: translate(-250px, 0);
+    transform: translate(-250px, 0);
     -webkit-transition: all .2s ease-out;
     -moz-transition: all .2s ease-out;
     transition: all .2s ease-out
@@ -2176,7 +2466,7 @@ body {
 
 @media only screen and (max-width: 767px) {
     .cs-menu .cs-has-submenu {
-        position:relative
+        position: relative
     }
 
     .cs-menu .cs-has-submenu::before {
@@ -2235,7 +2525,8 @@ body {
     padding: 17px
 }
 
-.cs-menu .cs-menu-button .cs-ico-menu,.cs-menu .cs-menu-button .cs-ico-menu-close {
+.cs-menu .cs-menu-button .cs-ico-menu,
+.cs-menu .cs-menu-button .cs-ico-menu-close {
     opacity: .9
 }
 
@@ -2245,7 +2536,7 @@ body {
 
 @media only screen and (max-width: 767px) {
     .cs-section .cs-menu {
-        position:fixed;
+        position: fixed;
         top: 0;
         right: 0;
         bottom: 0;
@@ -2263,13 +2554,13 @@ body {
         -webkit-transition: opacity .25s ease-in;
         -moz-transition: opacity .25s ease-in;
         transition: opacity .25s ease-in;
-        background: rgba(0,0,0,.6);
+        background: rgba(0, 0, 0, .6);
         z-index: 1
     }
 
     .cs-section .cs-menu .cs-menu-button {
         z-index: 2;
-        background: rgba(0,0,0,.6);
+        background: rgba(0, 0, 0, .6);
         cursor: pointer;
         display: block;
         height: 56px;
@@ -2277,11 +2568,11 @@ body {
         position: absolute;
         top: 0;
         right: 0;
-        -webkit-transform: translate(0,0);
-        -moz-transform: translate(0,0);
-        -ms-transform: translate(0,0);
-        -o-transform: translate(0,0);
-        transform: translate(0,0);
+        -webkit-transform: translate(0, 0);
+        -moz-transform: translate(0, 0);
+        -ms-transform: translate(0, 0);
+        -o-transform: translate(0, 0);
+        transform: translate(0, 0);
         -webkit-transition: all .25s ease-in;
         -moz-transition: all .25s ease-in;
         transition: all .25s ease-in
@@ -2293,15 +2584,15 @@ body {
         right: 0;
         bottom: 0;
         display: block;
-        -webkit-transform: translate(100%,0);
-        -moz-transform: translate(100%,0);
-        -ms-transform: translate(100%,0);
-        -o-transform: translate(100%,0);
-        transform: translate(100%,0);
+        -webkit-transform: translate(100%, 0);
+        -moz-transform: translate(100%, 0);
+        -ms-transform: translate(100%, 0);
+        -o-transform: translate(100%, 0);
+        transform: translate(100%, 0);
         -webkit-transition: all .25s ease-in;
         -moz-transition: all .25s ease-in;
         transition: all .25s ease-in;
-        background: rgba(255,255,255,.9);
+        background: rgba(255, 255, 255, .9);
         width: 250px;
         will-change: transform;
         overflow: auto;
@@ -2341,8 +2632,11 @@ body {
 }
 
 @media only screen and (min-width: 768px) {
-    .cs-menu.cs-menu-theme-3 .cs-menu-items>li.cs-is-active>a,.cs-menu.cs-menu-theme-3 .cs-menu-items>li>a:focus:not(.cs-external-link),.cs-menu.cs-menu-theme-3 .cs-menu-items>li>a:hover {
-        font-weight:400
+
+    .cs-menu.cs-menu-theme-3 .cs-menu-items>li.cs-is-active>a,
+    .cs-menu.cs-menu-theme-3 .cs-menu-items>li>a:focus:not(.cs-external-link),
+    .cs-menu.cs-menu-theme-3 .cs-menu-items>li>a:hover {
+        font-weight: 400
     }
 
     .cs-menu a {
@@ -2402,17 +2696,19 @@ body {
         -ms-flex-direction: column
     }
 
-    .cs-menu.cs-menu-vertical .cs-menu-items>li.cs-show-submenu .cs-submenu-items,.cs-menu.cs-menu-vertical .cs-menu-items>li:hover .cs-submenu-items {
+    .cs-menu.cs-menu-vertical .cs-menu-items>li.cs-show-submenu .cs-submenu-items,
+    .cs-menu.cs-menu-vertical .cs-menu-items>li:hover .cs-submenu-items {
         left: calc(100% + 10px);
         top: 0;
-        -webkit-transform: translate(0,0);
-        -moz-transform: translate(0,0);
-        -ms-transform: translate(0,0);
-        -o-transform: translate(0,0);
-        transform: translate(0,0)
+        -webkit-transform: translate(0, 0);
+        -moz-transform: translate(0, 0);
+        -ms-transform: translate(0, 0);
+        -o-transform: translate(0, 0);
+        transform: translate(0, 0)
     }
 
-    .cs-menu.cs-menu-vertical .cs-menu-items>li.cs-show-submenu .cs-submenu-items::before,.cs-menu.cs-menu-vertical .cs-menu-items>li:hover .cs-submenu-items::before {
+    .cs-menu.cs-menu-vertical .cs-menu-items>li.cs-show-submenu .cs-submenu-items::before,
+    .cs-menu.cs-menu-vertical .cs-menu-items>li:hover .cs-submenu-items::before {
         height: auto;
         width: 10px;
         position: absolute;
@@ -2422,12 +2718,18 @@ body {
         left: -10px
     }
 
-    .cs-aside-right .cs-menu.cs-menu-vertical .cs-menu-items>li.cs-show-submenu .cs-submenu-items,.cs-aside-right .cs-menu.cs-menu-vertical .cs-menu-items>li:hover .cs-submenu-items,.cs-section:not(sidebar) .cs-boxes .cs-box:last-of-type .cs-menu.cs-menu-vertical .cs-menu-items>li.cs-show-submenu .cs-submenu-items,.cs-section:not(sidebar) .cs-boxes .cs-box:last-of-type .cs-menu.cs-menu-vertical .cs-menu-items>li:hover .cs-submenu-items {
+    .cs-aside-right .cs-menu.cs-menu-vertical .cs-menu-items>li.cs-show-submenu .cs-submenu-items,
+    .cs-aside-right .cs-menu.cs-menu-vertical .cs-menu-items>li:hover .cs-submenu-items,
+    .cs-section:not(sidebar) .cs-boxes .cs-box:last-of-type .cs-menu.cs-menu-vertical .cs-menu-items>li.cs-show-submenu .cs-submenu-items,
+    .cs-section:not(sidebar) .cs-boxes .cs-box:last-of-type .cs-menu.cs-menu-vertical .cs-menu-items>li:hover .cs-submenu-items {
         left: auto;
         right: calc(100% + 10px)
     }
 
-    .cs-aside-right .cs-menu.cs-menu-vertical .cs-menu-items>li.cs-show-submenu .cs-submenu-items::before,.cs-aside-right .cs-menu.cs-menu-vertical .cs-menu-items>li:hover .cs-submenu-items::before,.cs-section:not(sidebar) .cs-boxes .cs-box:last-of-type .cs-menu.cs-menu-vertical .cs-menu-items>li.cs-show-submenu .cs-submenu-items::before,.cs-section:not(sidebar) .cs-boxes .cs-box:last-of-type .cs-menu.cs-menu-vertical .cs-menu-items>li:hover .cs-submenu-items::before {
+    .cs-aside-right .cs-menu.cs-menu-vertical .cs-menu-items>li.cs-show-submenu .cs-submenu-items::before,
+    .cs-aside-right .cs-menu.cs-menu-vertical .cs-menu-items>li:hover .cs-submenu-items::before,
+    .cs-section:not(sidebar) .cs-boxes .cs-box:last-of-type .cs-menu.cs-menu-vertical .cs-menu-items>li.cs-show-submenu .cs-submenu-items::before,
+    .cs-section:not(sidebar) .cs-boxes .cs-box:last-of-type .cs-menu.cs-menu-vertical .cs-menu-items>li:hover .cs-submenu-items::before {
         right: -10px;
         left: auto
     }
@@ -2538,11 +2840,11 @@ body {
 
     .cs-menu.cs-menu-theme-2 .cs-menu-items>li.cs-has-submenu>a::after {
         content: "";
-        -webkit-transform: rotate(45deg) translate(0,-20%);
-        -moz-transform: rotate(45deg) translate(0,-20%);
-        -ms-transform: rotate(45deg) translate(0,-20%);
-        -o-transform: rotate(45deg) translate(0,-20%);
-        transform: rotate(45deg) translate(0,-20%);
+        -webkit-transform: rotate(45deg) translate(0, -20%);
+        -moz-transform: rotate(45deg) translate(0, -20%);
+        -ms-transform: rotate(45deg) translate(0, -20%);
+        -o-transform: rotate(45deg) translate(0, -20%);
+        transform: rotate(45deg) translate(0, -20%);
         -webkit-transform-origin: top center;
         -moz-transform-origin: top center;
         -ms-transform-origin: top center;
@@ -2559,22 +2861,23 @@ body {
         border-top: 1px solid transparent
     }
 
-    .cs-menu.cs-menu-theme-2 .cs-menu-items>li.cs-show-submenu>a::after,.cs-menu.cs-menu-theme-2 .cs-menu-items>li:hover>a::after {
-        -webkit-transform: rotate(225deg) translate(0,-50%);
-        -moz-transform: rotate(225deg) translate(0,-50%);
-        -ms-transform: rotate(225deg) translate(0,-50%);
-        -o-transform: rotate(225deg) translate(0,-50%);
-        transform: rotate(225deg) translate(0,-50%)
+    .cs-menu.cs-menu-theme-2 .cs-menu-items>li.cs-show-submenu>a::after,
+    .cs-menu.cs-menu-theme-2 .cs-menu-items>li:hover>a::after {
+        -webkit-transform: rotate(225deg) translate(0, -50%);
+        -moz-transform: rotate(225deg) translate(0, -50%);
+        -ms-transform: rotate(225deg) translate(0, -50%);
+        -o-transform: rotate(225deg) translate(0, -50%);
+        transform: rotate(225deg) translate(0, -50%)
     }
 
     .cs-menu.cs-menu-theme-2 .cs-menu-items .cs-submenu-items {
         padding: 10px 0;
         opacity: 1;
-        -webkit-transform: translate(-10px,0);
-        -moz-transform: translate(-10px,0);
-        -ms-transform: translate(-10px,0);
-        -o-transform: translate(-10px,0);
-        transform: translate(-10px,0)
+        -webkit-transform: translate(-10px, 0);
+        -moz-transform: translate(-10px, 0);
+        -ms-transform: translate(-10px, 0);
+        -o-transform: translate(-10px, 0);
+        transform: translate(-10px, 0)
     }
 
     .cs-menu.cs-menu-theme-2 .cs-menu-items .cs-submenu-items li {
@@ -2601,11 +2904,11 @@ body {
     }
 
     .cs-menu.cs-menu-theme-2.cs-menu-vertical .cs-menu-items>li.cs-has-submenu>a::after {
-        -webkit-transform: rotate(-45deg) translate(0,-1px);
-        -moz-transform: rotate(-45deg) translate(0,-1px);
-        -ms-transform: rotate(-45deg) translate(0,-1px);
-        -o-transform: rotate(-45deg) translate(0,-1px);
-        transform: rotate(-45deg) translate(0,-1px);
+        -webkit-transform: rotate(-45deg) translate(0, -1px);
+        -moz-transform: rotate(-45deg) translate(0, -1px);
+        -ms-transform: rotate(-45deg) translate(0, -1px);
+        -o-transform: rotate(-45deg) translate(0, -1px);
+        transform: rotate(-45deg) translate(0, -1px);
         -webkit-transform-origin: center center;
         -moz-transform-origin: center center;
         -ms-transform-origin: center center;
@@ -2613,31 +2916,36 @@ body {
         transform-origin: center center
     }
 
-    .cs-aside-right .cs-menu.cs-menu-theme-2.cs-menu-vertical .cs-menu-items>li.cs-has-submenu>a::after,.cs-section:not(sidebar) .cs-boxes .cs-box:last-of-type .cs-menu.cs-menu-theme-2.cs-menu-vertical .cs-menu-items>li.cs-has-submenu>a::after {
+    .cs-aside-right .cs-menu.cs-menu-theme-2.cs-menu-vertical .cs-menu-items>li.cs-has-submenu>a::after,
+    .cs-section:not(sidebar) .cs-boxes .cs-box:last-of-type .cs-menu.cs-menu-theme-2.cs-menu-vertical .cs-menu-items>li.cs-has-submenu>a::after {
         float: left;
         margin: 4px 7px 0 -2px;
-        -webkit-transform: rotate(-225deg) translate(0,-1px);
-        -moz-transform: rotate(-225deg) translate(0,-1px);
-        -ms-transform: rotate(-225deg) translate(0,-1px);
-        -o-transform: rotate(-225deg) translate(0,-1px);
-        transform: rotate(-225deg) translate(0,-1px)
+        -webkit-transform: rotate(-225deg) translate(0, -1px);
+        -moz-transform: rotate(-225deg) translate(0, -1px);
+        -ms-transform: rotate(-225deg) translate(0, -1px);
+        -o-transform: rotate(-225deg) translate(0, -1px);
+        transform: rotate(-225deg) translate(0, -1px)
     }
 
-    .cs-menu.cs-menu-theme-2.cs-menu-vertical .cs-menu-items>li.cs-show-submenu>a::after,.cs-menu.cs-menu-theme-2.cs-menu-vertical .cs-menu-items>li:hover>a::after {
-        -webkit-transform: rotate(-225deg) translate(0,1px);
-        -moz-transform: rotate(-225deg) translate(0,1px);
-        -ms-transform: rotate(-225deg) translate(0,1px);
-        -o-transform: rotate(-225deg) translate(0,1px);
-        transform: rotate(-225deg) translate(0,1px)
+    .cs-menu.cs-menu-theme-2.cs-menu-vertical .cs-menu-items>li.cs-show-submenu>a::after,
+    .cs-menu.cs-menu-theme-2.cs-menu-vertical .cs-menu-items>li:hover>a::after {
+        -webkit-transform: rotate(-225deg) translate(0, 1px);
+        -moz-transform: rotate(-225deg) translate(0, 1px);
+        -ms-transform: rotate(-225deg) translate(0, 1px);
+        -o-transform: rotate(-225deg) translate(0, 1px);
+        transform: rotate(-225deg) translate(0, 1px)
     }
 
-    .cs-aside-right .cs-menu.cs-menu-theme-2.cs-menu-vertical .cs-menu-items>li.cs-show-submenu>a::after,.cs-aside-right .cs-menu.cs-menu-theme-2.cs-menu-vertical .cs-menu-items>li:hover>a::after,.cs-section:not(sidebar) .cs-boxes .cs-box:last-of-type .cs-menu.cs-menu-theme-2.cs-menu-vertical .cs-menu-items>li.cs-show-submenu>a::after,.cs-section:not(sidebar) .cs-boxes .cs-box:last-of-type .cs-menu.cs-menu-theme-2.cs-menu-vertical .cs-menu-items>li:hover>a::after {
+    .cs-aside-right .cs-menu.cs-menu-theme-2.cs-menu-vertical .cs-menu-items>li.cs-show-submenu>a::after,
+    .cs-aside-right .cs-menu.cs-menu-theme-2.cs-menu-vertical .cs-menu-items>li:hover>a::after,
+    .cs-section:not(sidebar) .cs-boxes .cs-box:last-of-type .cs-menu.cs-menu-theme-2.cs-menu-vertical .cs-menu-items>li.cs-show-submenu>a::after,
+    .cs-section:not(sidebar) .cs-boxes .cs-box:last-of-type .cs-menu.cs-menu-theme-2.cs-menu-vertical .cs-menu-items>li:hover>a::after {
         margin-top: 5px;
-        -webkit-transform: rotate(-45deg) translate(0,-1px);
-        -moz-transform: rotate(-45deg) translate(0,-1px);
-        -ms-transform: rotate(-45deg) translate(0,-1px);
-        -o-transform: rotate(-45deg) translate(0,-1px);
-        transform: rotate(-45deg) translate(0,-1px)
+        -webkit-transform: rotate(-45deg) translate(0, -1px);
+        -moz-transform: rotate(-45deg) translate(0, -1px);
+        -ms-transform: rotate(-45deg) translate(0, -1px);
+        -o-transform: rotate(-45deg) translate(0, -1px);
+        transform: rotate(-45deg) translate(0, -1px)
     }
 
     .cs-menu.cs-menu-theme-3 .cs-menu-items>li {
@@ -2676,7 +2984,9 @@ body {
         width: 100%
     }
 
-    .cs-menu.cs-menu-theme-3 .cs-menu-items>li:hover>a::after,.cs-menu.cs-menu-theme-3 .cs-menu-items>li>a:focus:not(.cs-external-link)::after,.cs-menu.cs-menu-theme-3 .cs-menu-items>li>a:hover::after {
+    .cs-menu.cs-menu-theme-3 .cs-menu-items>li:hover>a::after,
+    .cs-menu.cs-menu-theme-3 .cs-menu-items>li>a:focus:not(.cs-external-link)::after,
+    .cs-menu.cs-menu-theme-3 .cs-menu-items>li>a:hover::after {
         visibility: visible;
         opacity: 1
     }
@@ -2764,17 +3074,18 @@ body {
         position: absolute;
         top: 50%;
         right: 8px;
-        -webkit-transform: translate(0,-50%);
-        -moz-transform: translate(0,-50%);
-        -ms-transform: translate(0,-50%);
-        -o-transform: translate(0,-50%);
-        transform: translate(0,-50%);
+        -webkit-transform: translate(0, -50%);
+        -moz-transform: translate(0, -50%);
+        -ms-transform: translate(0, -50%);
+        -o-transform: translate(0, -50%);
+        transform: translate(0, -50%);
         -webkit-transition: all .25s ease-in-out;
         -moz-transition: all .25s ease-in-out;
         transition: all .25s ease-in-out
     }
 
-    .cs-menu.cs-menu-theme-5 .cs-menu-items>li.cs-has-submenu.cs-show-submenu>a::after,.cs-menu.cs-menu-theme-5 .cs-menu-items>li.cs-has-submenu:hover>a::after {
+    .cs-menu.cs-menu-theme-5 .cs-menu-items>li.cs-has-submenu.cs-show-submenu>a::after,
+    .cs-menu.cs-menu-theme-5 .cs-menu-items>li.cs-has-submenu:hover>a::after {
         -webkit-transform: rotate(180deg);
         -moz-transform: rotate(180deg);
         -ms-transform: rotate(180deg);
@@ -2786,11 +3097,11 @@ body {
     }
 
     .cs-menu.cs-menu-theme-5 .cs-menu-items .cs-submenu-items {
-        -webkit-transform: translate(0,0);
-        -moz-transform: translate(0,0);
-        -ms-transform: translate(0,0);
-        -o-transform: translate(0,0);
-        transform: translate(0,0);
+        -webkit-transform: translate(0, 0);
+        -moz-transform: translate(0, 0);
+        -ms-transform: translate(0, 0);
+        -o-transform: translate(0, 0);
+        transform: translate(0, 0);
         top: 0;
         padding: 0 3px;
         border-radius: 13px
@@ -2830,11 +3141,13 @@ body {
         transform: rotate(-90deg)
     }
 
-    .cs-aside-right .cs-menu.cs-menu-theme-5.cs-menu-vertical .cs-menu-items>li.cs-has-submenu>a,.cs-section:not(sidebar) .cs-boxes .cs-box:last-of-type .cs-menu.cs-menu-theme-5.cs-menu-vertical .cs-menu-items>li.cs-has-submenu>a {
+    .cs-aside-right .cs-menu.cs-menu-theme-5.cs-menu-vertical .cs-menu-items>li.cs-has-submenu>a,
+    .cs-section:not(sidebar) .cs-boxes .cs-box:last-of-type .cs-menu.cs-menu-theme-5.cs-menu-vertical .cs-menu-items>li.cs-has-submenu>a {
         padding: 5px 16px 6px 25px
     }
 
-    .cs-aside-right .cs-menu.cs-menu-theme-5.cs-menu-vertical .cs-menu-items>li.cs-has-submenu>a::after,.cs-section:not(sidebar) .cs-boxes .cs-box:last-of-type .cs-menu.cs-menu-theme-5.cs-menu-vertical .cs-menu-items>li.cs-has-submenu>a::after {
+    .cs-aside-right .cs-menu.cs-menu-theme-5.cs-menu-vertical .cs-menu-items>li.cs-has-submenu>a::after,
+    .cs-section:not(sidebar) .cs-boxes .cs-box:last-of-type .cs-menu.cs-menu-theme-5.cs-menu-vertical .cs-menu-items>li.cs-has-submenu>a::after {
         left: 8px;
         -webkit-transform: rotate(90deg);
         -moz-transform: rotate(90deg);
@@ -2843,7 +3156,8 @@ body {
         transform: rotate(90deg)
     }
 
-    .cs-menu.cs-menu-theme-5.cs-menu-vertical .cs-menu-items>li.cs-has-submenu.cs-show-submenu>a::after,.cs-menu.cs-menu-theme-5.cs-menu-vertical .cs-menu-items>li.cs-has-submenu:hover>a::after {
+    .cs-menu.cs-menu-theme-5.cs-menu-vertical .cs-menu-items>li.cs-has-submenu.cs-show-submenu>a::after,
+    .cs-menu.cs-menu-theme-5.cs-menu-vertical .cs-menu-items>li.cs-has-submenu:hover>a::after {
         top: calc(50% - 2px);
         -webkit-transform: rotate(90deg);
         -moz-transform: rotate(90deg);
@@ -2852,7 +3166,10 @@ body {
         transform: rotate(90deg)
     }
 
-    .cs-aside-right .cs-menu.cs-menu-theme-5.cs-menu-vertical .cs-menu-items>li.cs-has-submenu.cs-show-submenu>a::after,.cs-aside-right .cs-menu.cs-menu-theme-5.cs-menu-vertical .cs-menu-items>li.cs-has-submenu:hover>a::after,.cs-section:not(sidebar) .cs-boxes .cs-box:last-of-type .cs-menu.cs-menu-theme-5.cs-menu-vertical .cs-menu-items>li.cs-has-submenu.cs-show-submenu>a::after,.cs-section:not(sidebar) .cs-boxes .cs-box:last-of-type .cs-menu.cs-menu-theme-5.cs-menu-vertical .cs-menu-items>li.cs-has-submenu:hover>a::after {
+    .cs-aside-right .cs-menu.cs-menu-theme-5.cs-menu-vertical .cs-menu-items>li.cs-has-submenu.cs-show-submenu>a::after,
+    .cs-aside-right .cs-menu.cs-menu-theme-5.cs-menu-vertical .cs-menu-items>li.cs-has-submenu:hover>a::after,
+    .cs-section:not(sidebar) .cs-boxes .cs-box:last-of-type .cs-menu.cs-menu-theme-5.cs-menu-vertical .cs-menu-items>li.cs-has-submenu.cs-show-submenu>a::after,
+    .cs-section:not(sidebar) .cs-boxes .cs-box:last-of-type .cs-menu.cs-menu-theme-5.cs-menu-vertical .cs-menu-items>li.cs-has-submenu:hover>a::after {
         -webkit-transform: rotate(-90deg);
         -moz-transform: rotate(-90deg);
         -ms-transform: rotate(-90deg);
@@ -2862,7 +3179,7 @@ body {
 
     .cs-menu.cs-menu-theme-6 .cs-menu-items {
         border-radius: 20px;
-        box-shadow: 4px 0 rgba(0,0,0,.3) inset,-4px 0 rgba(0,0,0,.3) inset
+        box-shadow: 4px 0 rgba(0, 0, 0, .3) inset, -4px 0 rgba(0, 0, 0, .3) inset
     }
 
     .cs-menu.cs-menu-theme-6 .cs-menu-items>li {
@@ -2882,8 +3199,8 @@ body {
     .cs-menu.cs-menu-theme-6 .cs-menu-items>li::before {
         content: "";
         width: 0;
-        border-right: 1px solid rgba(0,0,0,.2);
-        border-left: 1px solid rgba(255,255,255,.1);
+        border-right: 1px solid rgba(0, 0, 0, .2);
+        border-left: 1px solid rgba(255, 255, 255, .1);
         position: absolute;
         top: 0;
         bottom: 0;
@@ -2916,7 +3233,7 @@ body {
 
     .cs-menu.cs-menu-theme-6.cs-menu-vertical .cs-menu-items {
         padding: 3px 2px;
-        box-shadow: 0 4px rgba(0,0,0,.3) inset,0 -4px rgba(0,0,0,.3) inset
+        box-shadow: 0 4px rgba(0, 0, 0, .3) inset, 0 -4px rgba(0, 0, 0, .3) inset
     }
 
     .cs-menu.cs-menu-theme-6.cs-menu-vertical .cs-menu-items>li {
@@ -2933,8 +3250,8 @@ body {
         height: 0;
         width: auto;
         border: none;
-        border-top: 1px solid rgba(0,0,0,.2);
-        border-bottom: 1px solid rgba(255,255,255,.1);
+        border-top: 1px solid rgba(0, 0, 0, .2);
+        border-bottom: 1px solid rgba(255, 255, 255, .1);
         position: absolute;
         top: -1px;
         right: 0;
@@ -2965,7 +3282,7 @@ body {
     }
 
     .cs-menu.cs-menu-theme-7 .cs-menu-items {
-        box-shadow: 0 6px 7px -6px rgba(0,0,0,.6);
+        box-shadow: 0 6px 7px -6px rgba(0, 0, 0, .6);
         border-radius: 4px
     }
 
@@ -2981,8 +3298,8 @@ body {
     .cs-menu.cs-menu-theme-7 .cs-menu-items>li::before {
         content: "";
         width: 0;
-        border-right: 1px solid rgba(0,0,0,.2);
-        border-left: 1px solid rgba(255,255,255,.1);
+        border-right: 1px solid rgba(0, 0, 0, .2);
+        border-left: 1px solid rgba(255, 255, 255, .1);
         position: absolute;
         top: 0;
         bottom: 0;
@@ -2995,7 +3312,7 @@ body {
 
     .cs-menu.cs-menu-theme-7 .cs-menu-items .cs-submenu-items {
         padding-bottom: 10px;
-        box-shadow: 0 6px 7px -6px rgba(0,0,0,.6)
+        box-shadow: 0 6px 7px -6px rgba(0, 0, 0, .6)
     }
 
     .cs-menu.cs-menu-theme-7 .cs-menu-items .cs-submenu-items li {
@@ -3026,8 +3343,8 @@ body {
         height: 0;
         width: auto;
         border: none;
-        border-top: 1px solid rgba(0,0,0,.2);
-        border-bottom: 1px solid rgba(255,255,255,.1);
+        border-top: 1px solid rgba(0, 0, 0, .2);
+        border-bottom: 1px solid rgba(255, 255, 255, .1);
         position: absolute;
         top: -1px;
         right: 0;
@@ -3054,7 +3371,7 @@ body {
 
     .cs-menu.cs-menu-theme-8 .cs-menu-items {
         border-radius: 4px;
-        box-shadow: 2px 2px 3px rgba(0,0,0,.3)
+        box-shadow: 2px 2px 3px rgba(0, 0, 0, .3)
     }
 
     .cs-menu.cs-menu-theme-8 .cs-menu-items>li {
@@ -3066,7 +3383,7 @@ body {
         content: "";
         height: 0;
         width: 0;
-        border-bottom: 6.5px solid rgba(0,0,0,.5);
+        border-bottom: 6.5px solid rgba(0, 0, 0, .5);
         border-left: 6.5px solid transparent;
         border-right: 6.5px solid transparent;
         position: absolute;
@@ -3079,21 +3396,24 @@ body {
         transform: translateX(-50%)
     }
 
-    .cs-menu.cs-menu-theme-8 .cs-menu-items>li.cs-has-submenu.cs-show-submenu>a,.cs-menu.cs-menu-theme-8 .cs-menu-items>li.cs-has-submenu:hover>a {
-        background: rgba(0,0,0,.5)
+    .cs-menu.cs-menu-theme-8 .cs-menu-items>li.cs-has-submenu.cs-show-submenu>a,
+    .cs-menu.cs-menu-theme-8 .cs-menu-items>li.cs-has-submenu:hover>a {
+        background: rgba(0, 0, 0, .5)
     }
 
-    .cs-menu.cs-menu-theme-8 .cs-menu-items>li.cs-has-submenu.cs-show-submenu>a::before,.cs-menu.cs-menu-theme-8 .cs-menu-items>li.cs-has-submenu:hover>a::before {
+    .cs-menu.cs-menu-theme-8 .cs-menu-items>li.cs-has-submenu.cs-show-submenu>a::before,
+    .cs-menu.cs-menu-theme-8 .cs-menu-items>li.cs-has-submenu:hover>a::before {
         opacity: 0
     }
 
-    .cs-menu.cs-menu-theme-8 .cs-menu-items>li.cs-has-submenu.cs-show-submenu>a::after,.cs-menu.cs-menu-theme-8 .cs-menu-items>li.cs-has-submenu:hover>a::after {
+    .cs-menu.cs-menu-theme-8 .cs-menu-items>li.cs-has-submenu.cs-show-submenu>a::after,
+    .cs-menu.cs-menu-theme-8 .cs-menu-items>li.cs-has-submenu:hover>a::after {
         content: "";
         height: 0;
         width: 0;
         border-left: 6.5px solid transparent;
         border-right: 6.5px solid transparent;
-        border-top: 6.5px solid rgba(0,0,0,.5);
+        border-top: 6.5px solid rgba(0, 0, 0, .5);
         position: absolute;
         bottom: -6px;
         left: 50%;
@@ -3105,7 +3425,7 @@ body {
     }
 
     .cs-menu.cs-menu-theme-8 .cs-menu-items>li.cs-is-active>a {
-        background: rgba(0,0,0,.5)
+        background: rgba(0, 0, 0, .5)
     }
 
     .cs-menu.cs-menu-theme-8 .cs-menu-items>li>a {
@@ -3113,16 +3433,18 @@ body {
         position: relative
     }
 
-    .cs-menu.cs-menu-theme-8 .cs-menu-items>li>a:focus:not(.cs-external-link),.cs-menu.cs-menu-theme-8 .cs-menu-items>li>a:hover {
-        background: rgba(0,0,0,.5)
+    .cs-menu.cs-menu-theme-8 .cs-menu-items>li>a:focus:not(.cs-external-link),
+    .cs-menu.cs-menu-theme-8 .cs-menu-items>li>a:hover {
+        background: rgba(0, 0, 0, .5)
     }
 
     .cs-menu.cs-menu-theme-8 .cs-menu-items .cs-submenu-items {
         top: calc(100% + 9px)
     }
 
-    .cs-menu.cs-menu-theme-8 .cs-menu-items .cs-submenu-items a:focus,.cs-menu.cs-menu-theme-8 .cs-menu-items .cs-submenu-items a:hover {
-        background: rgba(0,0,0,.5)
+    .cs-menu.cs-menu-theme-8 .cs-menu-items .cs-submenu-items a:focus,
+    .cs-menu.cs-menu-theme-8 .cs-menu-items .cs-submenu-items a:hover {
+        background: rgba(0, 0, 0, .5)
     }
 
     .cs-menu.cs-menu-theme-8.cs-menu-vertical .cs-menu-items {
@@ -3145,7 +3467,8 @@ body {
         transform: translateX(0) translateY(50%) rotate(-90deg)
     }
 
-    .cs-aside-right .cs-menu.cs-menu-theme-8.cs-menu-vertical .cs-menu-items>li.cs-has-submenu>a::before,.cs-section:not(sidebar) .cs-boxes .cs-box:last-of-type .cs-menu.cs-menu-theme-8.cs-menu-vertical .cs-menu-items>li.cs-has-submenu>a::before {
+    .cs-aside-right .cs-menu.cs-menu-theme-8.cs-menu-vertical .cs-menu-items>li.cs-has-submenu>a::before,
+    .cs-section:not(sidebar) .cs-boxes .cs-box:last-of-type .cs-menu.cs-menu-theme-8.cs-menu-vertical .cs-menu-items>li.cs-has-submenu>a::before {
         right: auto;
         left: -2px;
         -webkit-transform: translateX(0) translateY(50%) rotate(90deg);
@@ -3155,7 +3478,8 @@ body {
         transform: translateX(0) translateY(50%) rotate(90deg)
     }
 
-    .cs-menu.cs-menu-theme-8.cs-menu-vertical .cs-menu-items>li.cs-has-submenu.cs-show-submenu>a::after,.cs-menu.cs-menu-theme-8.cs-menu-vertical .cs-menu-items>li.cs-has-submenu:hover>a::after {
+    .cs-menu.cs-menu-theme-8.cs-menu-vertical .cs-menu-items>li.cs-has-submenu.cs-show-submenu>a::after,
+    .cs-menu.cs-menu-theme-8.cs-menu-vertical .cs-menu-items>li.cs-has-submenu:hover>a::after {
         position: absolute;
         right: -9px;
         bottom: 50%;
@@ -3167,7 +3491,10 @@ body {
         transform: translateX(0) translateY(50%) rotate(-90deg)
     }
 
-    .cs-aside-right .cs-menu.cs-menu-theme-8.cs-menu-vertical .cs-menu-items>li.cs-has-submenu.cs-show-submenu>a::after,.cs-aside-right .cs-menu.cs-menu-theme-8.cs-menu-vertical .cs-menu-items>li.cs-has-submenu:hover>a::after,.cs-section:not(sidebar) .cs-boxes .cs-box:last-of-type .cs-menu.cs-menu-theme-8.cs-menu-vertical .cs-menu-items>li.cs-has-submenu.cs-show-submenu>a::after,.cs-section:not(sidebar) .cs-boxes .cs-box:last-of-type .cs-menu.cs-menu-theme-8.cs-menu-vertical .cs-menu-items>li.cs-has-submenu:hover>a::after {
+    .cs-aside-right .cs-menu.cs-menu-theme-8.cs-menu-vertical .cs-menu-items>li.cs-has-submenu.cs-show-submenu>a::after,
+    .cs-aside-right .cs-menu.cs-menu-theme-8.cs-menu-vertical .cs-menu-items>li.cs-has-submenu:hover>a::after,
+    .cs-section:not(sidebar) .cs-boxes .cs-box:last-of-type .cs-menu.cs-menu-theme-8.cs-menu-vertical .cs-menu-items>li.cs-has-submenu.cs-show-submenu>a::after,
+    .cs-section:not(sidebar) .cs-boxes .cs-box:last-of-type .cs-menu.cs-menu-theme-8.cs-menu-vertical .cs-menu-items>li.cs-has-submenu:hover>a::after {
         right: auto;
         left: -9px;
         -webkit-transform: translateX(0) translateY(50%) rotate(90deg);
@@ -3223,7 +3550,8 @@ body {
         padding: 0 3px
     }
 
-    .cs-aside-right .cs-menu.cs-menu-theme-9.cs-menu-vertical .cs-menu-items>li>a,.cs-section:not(sidebar) .cs-boxes .cs-box:last-of-type .cs-menu.cs-menu-theme-9.cs-menu-vertical .cs-menu-items>li>a {
+    .cs-aside-right .cs-menu.cs-menu-theme-9.cs-menu-vertical .cs-menu-items>li>a,
+    .cs-section:not(sidebar) .cs-boxes .cs-box:last-of-type .cs-menu.cs-menu-theme-9.cs-menu-vertical .cs-menu-items>li>a {
         float: left;
         margin: 7px 5px 0 0
     }
@@ -3251,7 +3579,8 @@ body {
     margin: 30px 0 15px
 }
 
-.cs-sale-widget .cs-button,.cs-showcase-product .cs-button {
+.cs-sale-widget .cs-button,
+.cs-showcase-product .cs-button {
     color: #000;
     border: none;
     text-decoration: none;
@@ -3270,7 +3599,8 @@ body {
     padding: 10px 35px
 }
 
-.cs-sale-widget .cs-button:focus,.cs-sale-widget .cs-button:hover {
+.cs-sale-widget .cs-button:focus,
+.cs-sale-widget .cs-button:hover {
     -webkit-transition: opacity .2s ease-out;
     -moz-transition: opacity .2s ease-out;
     transition: opacity .2s ease-out;
@@ -3292,13 +3622,13 @@ body {
 
 @media only screen and (min-width: 520px) {
     .cs-showcase-product {
-        max-width:calc(100% / 2 - 20px)
+        max-width: calc(100% / 2 - 20px)
     }
 }
 
 @media only screen and (min-width: 768px) {
     .cs-showcase-product {
-        max-width:calc(100% / 4 - 20px)
+        max-width: calc(100% / 4 - 20px)
     }
 
     .cs-showcase-1-per-row .cs-showcase-product {
@@ -3342,7 +3672,8 @@ body {
     overflow: hidden
 }
 
-.cs-showcase-product span,.cs-showcase-product strong {
+.cs-showcase-product span,
+.cs-showcase-product strong {
     display: block;
     margin: 0;
     padding-top: 5px
@@ -3362,7 +3693,8 @@ body {
     margin-top: 10px
 }
 
-.cs-showcase-product .cs-button:focus,.cs-showcase-product .cs-button:hover {
+.cs-showcase-product .cs-button:focus,
+.cs-showcase-product .cs-button:hover {
     -webkit-transition: opacity .2s ease-out;
     -moz-transition: opacity .2s ease-out;
     transition: opacity .2s ease-out;
@@ -3387,8 +3719,9 @@ body {
     padding-bottom: 5px
 }
 
-.cs-showcase-card .cs-showcase-info,.cs-showcase-modern .cs-showcase-info {
-    border: 1px solid rgba(0,0,0,.4);
+.cs-showcase-card .cs-showcase-info,
+.cs-showcase-modern .cs-showcase-info {
+    border: 1px solid rgba(0, 0, 0, .4);
     border-top: none;
     padding: 0 5px 5px
 }
@@ -3421,8 +3754,9 @@ body {
     padding-top: 55%
 }
 
-.cs-showcase-card .cs-showcase-image,.cs-showcase-modern .cs-showcase-image {
-    border: 1px solid rgba(0,0,0,.4)
+.cs-showcase-card .cs-showcase-image,
+.cs-showcase-modern .cs-showcase-image {
+    border: 1px solid rgba(0, 0, 0, .4)
 }
 
 .cs-product-modal {
@@ -3432,7 +3766,7 @@ body {
     right: 0;
     bottom: 0;
     overflow: auto;
-    background-color: rgba(0,0,0,.4);
+    background-color: rgba(0, 0, 0, .4);
     z-index: 4;
     display: flex;
     align-items: center;
@@ -3475,7 +3809,7 @@ body {
 
 @media only screen and (max-width: 767px) {
     .cs-product-modal .cs-product-content {
-        flex-direction:column
+        flex-direction: column
     }
 
     .cs-product-modal .cs-product-information {
@@ -3484,7 +3818,8 @@ body {
     }
 }
 
-.cs-product-modal .cs-product-information .cs-product-out-of-stock,.cs-product-modal .cs-product-information .cs-product-unavailable {
+.cs-product-modal .cs-product-information .cs-product-out-of-stock,
+.cs-product-modal .cs-product-information .cs-product-unavailable {
     background: #e6e8e9;
     border-radius: 5px;
     color: #666;
@@ -3493,7 +3828,8 @@ body {
     text-align: center
 }
 
-.cs-product-modal .cs-product-information[data-status=unavailable] .cs-product-action,.cs-product-modal .cs-product-information[data-status=unavailable] .cs-product-price {
+.cs-product-modal .cs-product-information[data-status=unavailable] .cs-product-action,
+.cs-product-modal .cs-product-information[data-status=unavailable] .cs-product-price {
     display: none
 }
 
@@ -3501,11 +3837,13 @@ body {
     display: block
 }
 
-.cs-product-modal .cs-product-information[data-status=out-of-stock] .cs-product-action,.cs-product-modal .cs-product-information[data-status=out-of-stock] .cs-product-price {
+.cs-product-modal .cs-product-information[data-status=out-of-stock] .cs-product-action,
+.cs-product-modal .cs-product-information[data-status=out-of-stock] .cs-product-price {
     display: none
 }
 
-.cs-product-modal .cs-product-information[data-status=out-of-stock] .cs-product-out-of-stock,.cs-product-modal .cs-product-quantity-select span {
+.cs-product-modal .cs-product-information[data-status=out-of-stock] .cs-product-out-of-stock,
+.cs-product-modal .cs-product-quantity-select span {
     display: block
 }
 
@@ -3520,11 +3858,14 @@ body {
     font-size: 14px
 }
 
-.cs-product-modal .cs-product-quantity-select,.cs-product-modal .cs-product-variations {
+.cs-product-modal .cs-product-quantity-select,
+.cs-product-modal .cs-product-variations {
     margin-botton: 20px
 }
 
-.cs-product-modal .cs-product-quantity,.cs-product-modal .cs-product-select,.cs-product-modal .cs-product-variation {
+.cs-product-modal .cs-product-quantity,
+.cs-product-modal .cs-product-select,
+.cs-product-modal .cs-product-variation {
     background: 0 0;
     border: 1px solid #e6e8e9;
     border-radius: 5px;
@@ -3537,18 +3878,28 @@ body {
 }
 
 @media only screen and (max-width: 767px) {
-    .cs-product-modal .cs-product-quantity,.cs-product-modal .cs-product-select,.cs-product-modal .cs-product-variation {
-        display:block;
+
+    .cs-product-modal .cs-product-quantity,
+    .cs-product-modal .cs-product-select,
+    .cs-product-modal .cs-product-variation {
+        display: block;
         margin: 12px 0;
         width: 100%
     }
 }
 
-.cs-product-modal .cs-product-quantity,.cs-product-modal .cs-product-quantity>*,.cs-product-modal .cs-product-select,.cs-product-modal .cs-product-select>*,.cs-product-modal .cs-product-variation,.cs-product-modal .cs-product-variation>* {
+.cs-product-modal .cs-product-quantity,
+.cs-product-modal .cs-product-quantity>*,
+.cs-product-modal .cs-product-select,
+.cs-product-modal .cs-product-select>*,
+.cs-product-modal .cs-product-variation,
+.cs-product-modal .cs-product-variation>* {
     cursor: pointer
 }
 
-.cs-product-modal .cs-product-quantity:after,.cs-product-modal .cs-product-select:after,.cs-product-modal .cs-product-variation:after {
+.cs-product-modal .cs-product-quantity:after,
+.cs-product-modal .cs-product-select:after,
+.cs-product-modal .cs-product-variation:after {
     -webkit-transform: rotate(135deg);
     -moz-transform: rotate(135deg);
     -ms-transform: rotate(135deg);
@@ -3565,11 +3916,15 @@ body {
     width: 6px
 }
 
-.cs-product-modal .cs-product-select.required.invalid,.cs-product-modal .required.invalid.cs-product-quantity,.cs-product-modal .required.invalid.cs-product-variation {
+.cs-product-modal .cs-product-select.required.invalid,
+.cs-product-modal .required.invalid.cs-product-quantity,
+.cs-product-modal .required.invalid.cs-product-variation {
     border: 1px solid red
 }
 
-.cs-product-modal .cs-product-quantity select,.cs-product-modal .cs-product-select select,.cs-product-modal .cs-product-variation select {
+.cs-product-modal .cs-product-quantity select,
+.cs-product-modal .cs-product-select select,
+.cs-product-modal .cs-product-variation select {
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -3621,7 +3976,8 @@ body {
     margin-top: 15px
 }
 
-.cs-product-modal .cs-product-action:focus,.cs-product-modal .cs-product-action:hover {
+.cs-product-modal .cs-product-action:focus,
+.cs-product-modal .cs-product-action:hover {
     -webkit-transition: opacity .2s ease-out;
     -moz-transition: opacity .2s ease-out;
     transition: opacity .2s ease-out;
@@ -3655,7 +4011,7 @@ body {
 
 @media only screen and (min-width: 768px) {
     .cs-product-modal .cs-product-action {
-        float:right
+        float: right
     }
 
     .cs-product-modal .cs-product-gallery {
@@ -3719,7 +4075,8 @@ body {
     border-radius: 5px
 }
 
-.cs-product-modal .cs-product-next,.cs-product-modal .cs-product-prev {
+.cs-product-modal .cs-product-next,
+.cs-product-modal .cs-product-prev {
     display: block;
     min-width: 12px;
     height: 12px;
@@ -3739,25 +4096,28 @@ body {
     text-align: left
 }
 
-.cs-product-modal .cs-product-feedback .feedback-error,.cs-product-modal .cs-product-feedback .feedback-success {
+.cs-product-modal .cs-product-feedback .feedback-error,
+.cs-product-modal .cs-product-feedback .feedback-success {
     margin-top: 10px;
     padding: 10px;
     border-radius: 5px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgba(103,128,159,.3);
+    background-color: rgba(103, 128, 159, .3);
     color: #354a5f
 }
 
-.cs-product-modal .cs-product-feedback .feedback-error .feedback-actions a,.cs-product-modal .cs-product-feedback .feedback-success .feedback-actions a {
+.cs-product-modal .cs-product-feedback .feedback-error .feedback-actions a,
+.cs-product-modal .cs-product-feedback .feedback-success .feedback-actions a {
     display: block;
     border-color: #354a5f;
     color: #354a5f;
     text-align: center
 }
 
-.cs-product-modal .cs-product-feedback .feedback-error .feedback-actions a.cs-button,.cs-product-modal .cs-product-feedback .feedback-success .feedback-actions a.cs-button {
+.cs-product-modal .cs-product-feedback .feedback-error .feedback-actions a.cs-button,
+.cs-product-modal .cs-product-feedback .feedback-success .feedback-actions a.cs-button {
     background: #fff;
     border: 1px solid #354a5f;
     border-radius: 5px;
@@ -3765,12 +4125,13 @@ body {
     text-decoration: none
 }
 
-.cs-product-modal .cs-product-feedback .feedback-error .feedback-actions a:nth-child(2),.cs-product-modal .cs-product-feedback .feedback-success .feedback-actions a:nth-child(2) {
+.cs-product-modal .cs-product-feedback .feedback-error .feedback-actions a:nth-child(2),
+.cs-product-modal .cs-product-feedback .feedback-success .feedback-actions a:nth-child(2) {
     margin-top: 5px
 }
 
 .cs-product-modal .cs-product-feedback .feedback-error {
-    background-color: rgba(216,85,83,.3);
+    background-color: rgba(216, 85, 83, .3);
     color: #d85553
 }
 
@@ -3784,7 +4145,8 @@ body {
     min-height: 25px
 }
 
-.cs-social-widget img,.cs-social-widget svg {
+.cs-social-widget img,
+.cs-social-widget svg {
     width: 40px;
     height: 40px;
     margin: 2px
@@ -3896,11 +4258,14 @@ body {
     font-size: 14px
 }
 
-.cs-section-full-content .infinite-background-item input,.cs-section-full-content .infinite-background-item label,.cs-text-widget-placeholder+.text-editor {
+.cs-section-full-content .infinite-background-item input,
+.cs-section-full-content .infinite-background-item label,
+.cs-text-widget-placeholder+.text-editor {
     display: none
 }
 
-.cs-text-widget .text-editor ol,.cs-text-widget .text-editor ul {
+.cs-text-widget .text-editor ol,
+.cs-text-widget .text-editor ul {
     list-style-position: inside;
     list-style-type: disc;
     word-break: break-word
@@ -3910,7 +4275,12 @@ body {
     list-style-type: decimal
 }
 
-.cs-text-widget .text-editor h1,.cs-text-widget .text-editor h2,.cs-text-widget .text-editor h3,.cs-text-widget .text-editor h4,.cs-text-widget .text-editor h5,.cs-text-widget .text-editor h6 {
+.cs-text-widget .text-editor h1,
+.cs-text-widget .text-editor h2,
+.cs-text-widget .text-editor h3,
+.cs-text-widget .text-editor h4,
+.cs-text-widget .text-editor h5,
+.cs-text-widget .text-editor h6 {
     font-weight: 400;
     word-break: break-word
 }
@@ -3963,13 +4333,15 @@ body {
     max-width: 944px
 }
 
-.cs-section-full .cs-section-inner,.cs-section-full-content .cs-lines,.cs-section-full-content .cs-section-inner {
+.cs-section-full .cs-section-inner,
+.cs-section-full-content .cs-lines,
+.cs-section-full-content .cs-section-inner {
     max-width: 100%
 }
 
 @media only screen and (max-width: 767px) {
     .cs-section-full {
-        width:100%
+        width: 100%
     }
 }
 
@@ -3981,7 +4353,7 @@ body {
 
 @media only screen and (max-width: 767px) {
     .cs-section-full-content {
-        width:100%
+        width: 100%
     }
 }
 
@@ -4029,8 +4401,10 @@ body {
 }
 
 @media only screen and (min-width: 768px) {
-    .cs-aside,header {
-        position:relative
+
+    .cs-aside,
+    header {
+        position: relative
     }
 
     header {
@@ -4072,7 +4446,7 @@ body {
 
 @media only screen and (max-width: 767px) {
     .cs-aside .cs-menu-widget {
-        margin:0
+        margin: 0
     }
 }
 
@@ -4105,8 +4479,8 @@ body {
 .pswp--animate_opacity {
     opacity: .001;
     will-change: opacity;
-    -webkit-transition: opacity 333ms cubic-bezier(.4,0,.22,1);
-    transition: opacity 333ms cubic-bezier(.4,0,.22,1)
+    -webkit-transition: opacity 333ms cubic-bezier(.4, 0, .22, 1);
+    transition: opacity 333ms cubic-bezier(.4, 0, .22, 1)
 }
 
 .pswp--open {
@@ -4154,7 +4528,8 @@ body {
     overflow: hidden
 }
 
-.pswp__container,.pswp__zoom-wrap {
+.pswp__container,
+.pswp__zoom-wrap {
     -ms-touch-action: none;
     touch-action: none;
     position: absolute;
@@ -4164,7 +4539,8 @@ body {
     bottom: 0
 }
 
-.pswp__container,.pswp__img {
+.pswp__container,
+.pswp__img {
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -4179,22 +4555,24 @@ body {
     -webkit-transform-origin: left top;
     -ms-transform-origin: left top;
     transform-origin: left top;
-    -webkit-transition: -webkit-transform 333ms cubic-bezier(.4,0,.22,1);
-    transition: transform 333ms cubic-bezier(.4,0,.22,1)
+    -webkit-transition: -webkit-transform 333ms cubic-bezier(.4, 0, .22, 1);
+    transition: transform 333ms cubic-bezier(.4, 0, .22, 1)
 }
 
 .pswp__bg {
     will-change: opacity;
-    -webkit-transition: opacity 333ms cubic-bezier(.4,0,.22,1);
-    transition: opacity 333ms cubic-bezier(.4,0,.22,1)
+    -webkit-transition: opacity 333ms cubic-bezier(.4, 0, .22, 1);
+    transition: opacity 333ms cubic-bezier(.4, 0, .22, 1)
 }
 
-.pswp--animated-in .pswp__bg,.pswp--animated-in .pswp__zoom-wrap {
+.pswp--animated-in .pswp__bg,
+.pswp--animated-in .pswp__zoom-wrap {
     -webkit-transition: none;
     transition: none
 }
 
-.pswp__container,.pswp__zoom-wrap {
+.pswp__container,
+.pswp__zoom-wrap {
     -webkit-backface-visibility: hidden
 }
 
@@ -4224,8 +4602,8 @@ body {
 }
 
 .pswp--ie .pswp__img {
-    width: 100%!important;
-    height: auto!important;
+    width: 100% !important;
+    height: auto !important;
     left: 0;
     top: 0
 }
@@ -4268,7 +4646,8 @@ body {
     box-shadow: none
 }
 
-.pswp__button:focus,.pswp__button:hover {
+.pswp__button:focus,
+.pswp__button:hover {
     opacity: 1
 }
 
@@ -4286,19 +4665,28 @@ body {
     opacity: 1
 }
 
-.pswp__button,.pswp__button--arrow--left:before,.pswp__button--arrow--right:before {
+.pswp__button,
+.pswp__button--arrow--left:before,
+.pswp__button--arrow--right:before {
     background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQgAAABYCAQAAACjBqE3AAAB6klEQVR4Ae3bsWpUQRTG8YkkanwCa7GzVotsI/gEgk9h4Vu4ySLYmMYgbJrc3lrwZbJwC0FMt4j7F6Y4oIZrsXtgxvx/1c0ufEX4cnbmLCmSJEmSJEmSJEmSJP3XCBPvbJU+8doWmDFwyZpLBmYlNJebz0KwzykwsuSYJSNwykEJreV2BaBMaLIQZ2xYcFgqDlmw4ayE/FwL0dDk4Qh4W37DAjgqIT+3HRbigjH+iikVdxgZStgyN0Su2sXIeTwTT+esdpcbIlfNAuZ/TxresG4zV8kYWSZNiKUTokMMSWeIwTNEn4fK2TW3gRNgVkJLuVksROA9G+bEvoATNlBCa7nZXEwdxEZxzpKRKFh+bsv8LmPFmhX1OwfIz81jIRJQ5eeqG9B+riRJkiRJkiRJkiRJkiRJkiRJUkvA/8RQoEpKlJWINFkJ62AlrEP/mNBibnv2yz/A3t7Uq3LcpoxP8COjC1T5vxoAD5VdoEqdDrd5QuW1swtUSaueh3zkiuBiqgtA2OlkeMcP/uDqugsJdbjHF65VdPMKwS0+WQc/MgKvrIOHysB9vgPwk8+85hmPbnQdvHZyDMAFD7L3EOpgMcVdvnHFS0/vlatrXvCVx0U9gt3fxvnA0/hB4nmRJEmSJEmSJEmSJGmHfgFLaDPoMu5xWwAAAABJRU5ErkJggg==) 0 0 no-repeat;
     background-size: 264px 88px;
     width: 44px;
     height: 44px
 }
 
-@media (-webkit-min-device-pixel-ratio: 1.1),(-webkit-min-device-pixel-ratio:1.09375),(min-resolution:105dpi),(min-resolution:1.1dppx) {
-    .pswp--svg .pswp__button,.pswp--svg .pswp__button--arrow--left:before,.pswp--svg .pswp__button--arrow--right:before {
-        background-image:url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjY0IiBoZWlnaHQ9Ijg4IiB2aWV3Qm94PSIwIDAgMjY0IDg4IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjx0aXRsZT5kZWZhdWx0LXNraW4gMjwvdGl0bGU+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj48Zz48cGF0aCBkPSJNNjcuMDAyIDU5LjV2My43NjhjLTYuMzA3Ljg0LTkuMTg0IDUuNzUtMTAuMDAyIDkuNzMyIDIuMjItMi44MyA1LjU2NC01LjA5OCAxMC4wMDItNS4wOThWNzEuNUw3MyA2NS41ODUgNjcuMDAyIDU5LjV6IiBpZD0iU2hhcGUiIGZpbGw9IiNmZmYiLz48ZyBmaWxsPSIjZmZmIj48cGF0aCBkPSJNMTMgMjl2LTVoMnYzaDN2MmgtNXpNMTMgMTVoNXYyaC0zdjNoLTJ2LTV6TTMxIDE1djVoLTJ2LTNoLTN2LTJoNXpNMzEgMjloLTV2LTJoM3YtM2gydjV6IiBpZD0iU2hhcGUiLz48L2c+PGcgZmlsbD0iI2ZmZiI+PHBhdGggZD0iTTYyIDI0djVoLTJ2LTNoLTN2LTJoNXpNNjIgMjBoLTV2LTJoM3YtM2gydjV6TTcwIDIwdi01aDJ2M2gzdjJoLTV6TTcwIDI0aDV2MmgtM3YzaC0ydi01eiIvPjwvZz48cGF0aCBkPSJNMjAuNTg2IDY2bC01LjY1Ni01LjY1NiAxLjQxNC0xLjQxNEwyMiA2NC41ODZsNS42NTYtNS42NTYgMS40MTQgMS40MTRMMjMuNDE0IDY2bDUuNjU2IDUuNjU2LTEuNDE0IDEuNDE0TDIyIDY3LjQxNGwtNS42NTYgNS42NTYtMS40MTQtMS40MTRMMjAuNTg2IDY2eiIgZmlsbD0iI2ZmZiIvPjxwYXRoIGQ9Ik0xMTEuNzg1IDY1LjAzTDExMCA2My41bDMtMy41aC0xMHYtMmgxMGwtMy0zLjUgMS43ODUtMS40NjhMMTE3IDU5bC01LjIxNSA2LjAzeiIgZmlsbD0iI2ZmZiIvPjxwYXRoIGQ9Ik0xNTIuMjE1IDY1LjAzTDE1NCA2My41bC0zLTMuNWgxMHYtMmgtMTBsMy0zLjUtMS43ODUtMS40NjhMMTQ3IDU5bDUuMjE1IDYuMDN6IiBmaWxsPSIjZmZmIi8+PGc+PHBhdGggaWQ9IlJlY3RhbmdsZS0xMSIgZmlsbD0iI2ZmZiIgZD0iTTE2MC45NTcgMjguNTQzbC0zLjI1LTMuMjUtMS40MTMgMS40MTQgMy4yNSAzLjI1eiIvPjxwYXRoIGQ9Ik0xNTIuNSAyN2MzLjAzOCAwIDUuNS0yLjQ2MiA1LjUtNS41cy0yLjQ2Mi01LjUtNS41LTUuNS01LjUgMi40NjItNS41IDUuNSAyLjQ2MiA1LjUgNS41IDUuNXoiIGlkPSJPdmFsLTEiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSIxLjUiLz48cGF0aCBmaWxsPSIjZmZmIiBkPSJNMTUwIDIxaDV2MWgtNXoiLz48L2c+PGc+PHBhdGggZD0iTTExNi45NTcgMjguNTQzbC0xLjQxNCAxLjQxNC0zLjI1LTMuMjUgMS40MTQtMS40MTQgMy4yNSAzLjI1eiIgZmlsbD0iI2ZmZiIvPjxwYXRoIGQ9Ik0xMDguNSAyN2MzLjAzOCAwIDUuNS0yLjQ2MiA1LjUtNS41cy0yLjQ2Mi01LjUtNS41LTUuNS01LjUgMi40NjItNS41IDUuNSAyLjQ2MiA1LjUgNS41IDUuNXoiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSIxLjUiLz48cGF0aCBmaWxsPSIjZmZmIiBkPSJNMTA2IDIxaDV2MWgtNXoiLz48cGF0aCBmaWxsPSIjZmZmIiBkPSJNMTA5LjA0MyAxOS4wMDhsLS4wODUgNS0xLS4wMTcuMDg1LTV6Ii8+PC9nPjwvZz48L2c+PC9zdmc+)
+@media (-webkit-min-device-pixel-ratio: 1.1),
+(-webkit-min-device-pixel-ratio:1.09375),
+(min-resolution:105dpi),
+(min-resolution:1.1dppx) {
+
+    .pswp--svg .pswp__button,
+    .pswp--svg .pswp__button--arrow--left:before,
+    .pswp--svg .pswp__button--arrow--right:before {
+        background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjY0IiBoZWlnaHQ9Ijg4IiB2aWV3Qm94PSIwIDAgMjY0IDg4IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjx0aXRsZT5kZWZhdWx0LXNraW4gMjwvdGl0bGU+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj48Zz48cGF0aCBkPSJNNjcuMDAyIDU5LjV2My43NjhjLTYuMzA3Ljg0LTkuMTg0IDUuNzUtMTAuMDAyIDkuNzMyIDIuMjItMi44MyA1LjU2NC01LjA5OCAxMC4wMDItNS4wOThWNzEuNUw3MyA2NS41ODUgNjcuMDAyIDU5LjV6IiBpZD0iU2hhcGUiIGZpbGw9IiNmZmYiLz48ZyBmaWxsPSIjZmZmIj48cGF0aCBkPSJNMTMgMjl2LTVoMnYzaDN2MmgtNXpNMTMgMTVoNXYyaC0zdjNoLTJ2LTV6TTMxIDE1djVoLTJ2LTNoLTN2LTJoNXpNMzEgMjloLTV2LTJoM3YtM2gydjV6IiBpZD0iU2hhcGUiLz48L2c+PGcgZmlsbD0iI2ZmZiI+PHBhdGggZD0iTTYyIDI0djVoLTJ2LTNoLTN2LTJoNXpNNjIgMjBoLTV2LTJoM3YtM2gydjV6TTcwIDIwdi01aDJ2M2gzdjJoLTV6TTcwIDI0aDV2MmgtM3YzaC0ydi01eiIvPjwvZz48cGF0aCBkPSJNMjAuNTg2IDY2bC01LjY1Ni01LjY1NiAxLjQxNC0xLjQxNEwyMiA2NC41ODZsNS42NTYtNS42NTYgMS40MTQgMS40MTRMMjMuNDE0IDY2bDUuNjU2IDUuNjU2LTEuNDE0IDEuNDE0TDIyIDY3LjQxNGwtNS42NTYgNS42NTYtMS40MTQtMS40MTRMMjAuNTg2IDY2eiIgZmlsbD0iI2ZmZiIvPjxwYXRoIGQ9Ik0xMTEuNzg1IDY1LjAzTDExMCA2My41bDMtMy41aC0xMHYtMmgxMGwtMy0zLjUgMS43ODUtMS40NjhMMTE3IDU5bC01LjIxNSA2LjAzeiIgZmlsbD0iI2ZmZiIvPjxwYXRoIGQ9Ik0xNTIuMjE1IDY1LjAzTDE1NCA2My41bC0zLTMuNWgxMHYtMmgtMTBsMy0zLjUtMS43ODUtMS40NjhMMTQ3IDU5bDUuMjE1IDYuMDN6IiBmaWxsPSIjZmZmIi8+PGc+PHBhdGggaWQ9IlJlY3RhbmdsZS0xMSIgZmlsbD0iI2ZmZiIgZD0iTTE2MC45NTcgMjguNTQzbC0zLjI1LTMuMjUtMS40MTMgMS40MTQgMy4yNSAzLjI1eiIvPjxwYXRoIGQ9Ik0xNTIuNSAyN2MzLjAzOCAwIDUuNS0yLjQ2MiA1LjUtNS41cy0yLjQ2Mi01LjUtNS41LTUuNS01LjUgMi40NjItNS41IDUuNSAyLjQ2MiA1LjUgNS41IDUuNXoiIGlkPSJPdmFsLTEiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSIxLjUiLz48cGF0aCBmaWxsPSIjZmZmIiBkPSJNMTUwIDIxaDV2MWgtNXoiLz48L2c+PGc+PHBhdGggZD0iTTExNi45NTcgMjguNTQzbC0xLjQxNCAxLjQxNC0zLjI1LTMuMjUgMS40MTQtMS40MTQgMy4yNSAzLjI1eiIgZmlsbD0iI2ZmZiIvPjxwYXRoIGQ9Ik0xMDguNSAyN2MzLjAzOCAwIDUuNS0yLjQ2MiA1LjUtNS41cy0yLjQ2Mi01LjUtNS41LTUuNS01LjUgMi40NjItNS41IDUuNSAyLjQ2MiA1LjUgNS41IDUuNXoiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSIxLjUiLz48cGF0aCBmaWxsPSIjZmZmIiBkPSJNMTA2IDIxaDV2MWgtNXoiLz48cGF0aCBmaWxsPSIjZmZmIiBkPSJNMTA5LjA0MyAxOS4wMDhsLS4wODUgNS0xLS4wMTcuMDg1LTV6Ii8+PC9nPjwvZz48L2c+PC9zdmc+)
     }
 
-    .pswp--svg .pswp__button--arrow--left,.pswp--svg .pswp__button--arrow--right {
+    .pswp--svg .pswp__button--arrow--left,
+    .pswp--svg .pswp__button--arrow--right {
         background: 0 0
     }
 }
@@ -4336,11 +4724,13 @@ body {
     background-position: -132px 0
 }
 
-.pswp--touch .pswp__button--arrow--left,.pswp--touch .pswp__button--arrow--right {
+.pswp--touch .pswp__button--arrow--left,
+.pswp--touch .pswp__button--arrow--right {
     visibility: hidden
 }
 
-.pswp__button--arrow--left,.pswp__button--arrow--right {
+.pswp__button--arrow--left,
+.pswp__button--arrow--right {
     background: 0 0;
     top: 50%;
     margin-top: -50px;
@@ -4357,10 +4747,11 @@ body {
     right: 0
 }
 
-.pswp__button--arrow--left:before,.pswp__button--arrow--right:before {
+.pswp__button--arrow--left:before,
+.pswp__button--arrow--right:before {
     content: '';
     top: 35px;
-    background-color: rgba(0,0,0,.3);
+    background-color: rgba(0, 0, 0, .3);
     height: 30px;
     width: 32px;
     position: absolute
@@ -4376,7 +4767,8 @@ body {
     background-position: -94px -44px
 }
 
-.pswp__counter,.pswp__share-modal {
+.pswp__counter,
+.pswp__share-modal {
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -4385,7 +4777,7 @@ body {
 
 .pswp__share-modal {
     display: block;
-    background: rgba(0,0,0,.5);
+    background: rgba(0, 0, 0, .5);
     width: 100%;
     height: 100%;
     top: 0;
@@ -4413,8 +4805,8 @@ body {
     display: block;
     width: auto;
     right: 44px;
-    -webkit-box-shadow: 0 2px 5px rgba(0,0,0,.25);
-    box-shadow: 0 2px 5px rgba(0,0,0,.25);
+    -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, .25);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .25);
     -webkit-transform: translateY(6px);
     -ms-transform: translateY(6px);
     transform: translateY(6px);
@@ -4579,8 +4971,8 @@ a.pswp__share--download:hover {
 }
 
 .pswp--css_animation .pswp__preloader--active .pswp__preloader__donut {
-    -webkit-animation: donut-rotate 1s cubic-bezier(.4,0,.22,1) infinite;
-    animation: donut-rotate 1s cubic-bezier(.4,0,.22,1) infinite
+    -webkit-animation: donut-rotate 1s cubic-bezier(.4, 0, .22, 1) infinite;
+    animation: donut-rotate 1s cubic-bezier(.4, 0, .22, 1) infinite
 }
 
 .pswp--css_animation .pswp__preloader__icn {
@@ -4619,7 +5011,7 @@ a.pswp__share--download:hover {
 
 @media screen and (max-width: 1024px) {
     .pswp__preloader {
-        position:relative;
+        position: relative;
         left: auto;
         top: auto;
         margin: 0;
@@ -4700,43 +5092,55 @@ a.pswp__share--download:hover {
     width: 100%
 }
 
-.pswp--has_mouse .pswp__button--arrow--left,.pswp--has_mouse .pswp__button--arrow--right,.pswp__caption,.pswp__top-bar {
+.pswp--has_mouse .pswp__button--arrow--left,
+.pswp--has_mouse .pswp__button--arrow--right,
+.pswp__caption,
+.pswp__top-bar {
     -webkit-backface-visibility: hidden;
     will-change: opacity;
-    -webkit-transition: opacity 333ms cubic-bezier(.4,0,.22,1);
-    transition: opacity 333ms cubic-bezier(.4,0,.22,1)
+    -webkit-transition: opacity 333ms cubic-bezier(.4, 0, .22, 1);
+    transition: opacity 333ms cubic-bezier(.4, 0, .22, 1)
 }
 
-.pswp--has_mouse .pswp__button--arrow--left,.pswp--has_mouse .pswp__button--arrow--right {
+.pswp--has_mouse .pswp__button--arrow--left,
+.pswp--has_mouse .pswp__button--arrow--right {
     visibility: visible
 }
 
-.pswp__caption,.pswp__top-bar {
-    background-color: rgba(0,0,0,.5)
+.pswp__caption,
+.pswp__top-bar {
+    background-color: rgba(0, 0, 0, .5)
 }
 
-.pswp__ui--fit .pswp__caption,.pswp__ui--fit .pswp__top-bar {
-    background-color: rgba(0,0,0,.3)
+.pswp__ui--fit .pswp__caption,
+.pswp__ui--fit .pswp__top-bar {
+    background-color: rgba(0, 0, 0, .3)
 }
 
 .pswp__ui--idle .pswp__top-bar {
     opacity: 0
 }
 
-.pswp__ui--idle .pswp__button--arrow--left,.pswp__ui--idle .pswp__button--arrow--right {
+.pswp__ui--idle .pswp__button--arrow--left,
+.pswp__ui--idle .pswp__button--arrow--right {
     opacity: 0
 }
 
-.pswp__ui--hidden .pswp__button--arrow--left,.pswp__ui--hidden .pswp__button--arrow--right,.pswp__ui--hidden .pswp__caption,.pswp__ui--hidden .pswp__top-bar {
+.pswp__ui--hidden .pswp__button--arrow--left,
+.pswp__ui--hidden .pswp__button--arrow--right,
+.pswp__ui--hidden .pswp__caption,
+.pswp__ui--hidden .pswp__top-bar {
     opacity: .001
 }
 
-.pswp__ui--one-slide .pswp__button--arrow--left,.pswp__ui--one-slide .pswp__button--arrow--right,.pswp__ui--one-slide .pswp__counter {
+.pswp__ui--one-slide .pswp__button--arrow--left,
+.pswp__ui--one-slide .pswp__button--arrow--right,
+.pswp__ui--one-slide .pswp__counter {
     display: none
 }
 
 .pswp__element--disabled {
-    display: none!important
+    display: none !important
 }
 
 .pswp--minimal--dark .pswp__top-bar {
@@ -4747,13 +5151,20 @@ body {
     background-color: #ffffff;
 }
 
-.cs-page .text-editor p,.cs-page .text-editor ol,.cs-page .text-editor ul {
+.cs-page .text-editor p,
+.cs-page .text-editor ol,
+.cs-page .text-editor ul {
     font-family: 'Lato';
     font-size: 12px;
     color: #000;
 }
 
-.cs-page .text-editor h1,.cs-page .text-editor h2,.cs-page .text-editor h3,.cs-page .text-editor h4,.cs-page .text-editor h5,.cs-page .text-editor h6 {
+.cs-page .text-editor h1,
+.cs-page .text-editor h2,
+.cs-page .text-editor h3,
+.cs-page .text-editor h4,
+.cs-page .text-editor h5,
+.cs-page .text-editor h6 {
     font-family: 'Lato';
     color: #000000;
 }
@@ -4772,20 +5183,26 @@ body {
     background: rgba(255, 255, 255, 0);
 }
 
-.cs-menu-button .cs-ico-menu,.cs-menu-button .cs-ico-menu-close {
+.cs-menu-button .cs-ico-menu,
+.cs-menu-button .cs-ico-menu-close {
     fill: #ffffff;
 }
 
-.cs-language.cs-is-active,.cs-language:hover {
+.cs-language.cs-is-active,
+.cs-language:hover {
     border-color: #ffffff;
 }
 
 @media only screen and (min-width: 768px) {
-    .cs-menu a, .cs-menu.cs-menu-theme-9 .cs-menu-items > li::before {
+
+    .cs-menu a,
+    .cs-menu.cs-menu-theme-9 .cs-menu-items>li::before {
         color: #ffffff;
     }
 
-    .cs-menu .cs-menu-items > li > a:hover, .cs-menu .cs-menu-items > li.cs-is-active > a, .cs-menu .cs-menu-items > li:hover > a {
+    .cs-menu .cs-menu-items>li>a:hover,
+    .cs-menu .cs-menu-items>li.cs-is-active>a,
+    .cs-menu .cs-menu-items>li:hover>a {
         color: #0c343d;
     }
 
@@ -4797,35 +5214,74 @@ body {
         color: #ffffff;
     }
 
-    .cs-menu.cs-menu-theme-1, .cs-menu.cs-menu-theme-1 .cs-submenu-items, .cs-menu.cs-menu-theme-6 .cs-submenu-items, .cs-menu.cs-menu-theme-3 .cs-menu-items > li.cs-show-submenu > a::after {
+    .cs-menu.cs-menu-theme-1,
+    .cs-menu.cs-menu-theme-1 .cs-submenu-items,
+    .cs-menu.cs-menu-theme-6 .cs-submenu-items,
+    .cs-menu.cs-menu-theme-3 .cs-menu-items>li.cs-show-submenu>a::after {
         background: rgba(255, 255, 255, 0);
     }
 
-    .cs-menu .cs-submenu-items li a:hover, .cs-menu.cs-menu-theme-1 .cs-menu-items li a:focus, .cs-menu.cs-menu-theme-2 .cs-menu-items li a:focus, .cs-menu.cs-menu-theme-3 .cs-menu-items li a:focus, .cs-menu.cs-menu-theme-4 .cs-menu-items li a:focus, .cs-menu.cs-menu-theme-6 .cs-menu-items li a:focus, .cs-menu.cs-menu-theme-7 .cs-menu-items li a:focus, .cs-menu.cs-menu-theme-8 .cs-menu-items li a:focus, .cs-menu.cs-menu-theme-9 .cs-menu-items li a:focus, .cs-menu.cs-menu-theme-1 .cs-menu-items > li.cs-show-submenu > a, .cs-menu.cs-menu-theme-2 .cs-menu-items > li.cs-show-submenu > a, .cs-menu.cs-menu-theme-3 .cs-menu-items > li.cs-show-submenu > a, .cs-menu.cs-menu-theme-4 .cs-menu-items > li.cs-show-submenu > a, .cs-menu.cs-menu-theme-6 .cs-menu-items > li.cs-show-submenu > a, .cs-menu.cs-menu-theme-7 .cs-menu-items > li.cs-show-submenu > a, .cs-menu.cs-menu-theme-8 .cs-menu-items > li.cs-show-submenu > a, .cs-menu.cs-menu-theme-9 .cs-menu-items > li.cs-show-submenu > a {
+    .cs-menu .cs-submenu-items li a:hover,
+    .cs-menu.cs-menu-theme-1 .cs-menu-items li a:focus,
+    .cs-menu.cs-menu-theme-2 .cs-menu-items li a:focus,
+    .cs-menu.cs-menu-theme-3 .cs-menu-items li a:focus,
+    .cs-menu.cs-menu-theme-4 .cs-menu-items li a:focus,
+    .cs-menu.cs-menu-theme-6 .cs-menu-items li a:focus,
+    .cs-menu.cs-menu-theme-7 .cs-menu-items li a:focus,
+    .cs-menu.cs-menu-theme-8 .cs-menu-items li a:focus,
+    .cs-menu.cs-menu-theme-9 .cs-menu-items li a:focus,
+    .cs-menu.cs-menu-theme-1 .cs-menu-items>li.cs-show-submenu>a,
+    .cs-menu.cs-menu-theme-2 .cs-menu-items>li.cs-show-submenu>a,
+    .cs-menu.cs-menu-theme-3 .cs-menu-items>li.cs-show-submenu>a,
+    .cs-menu.cs-menu-theme-4 .cs-menu-items>li.cs-show-submenu>a,
+    .cs-menu.cs-menu-theme-6 .cs-menu-items>li.cs-show-submenu>a,
+    .cs-menu.cs-menu-theme-7 .cs-menu-items>li.cs-show-submenu>a,
+    .cs-menu.cs-menu-theme-8 .cs-menu-items>li.cs-show-submenu>a,
+    .cs-menu.cs-menu-theme-9 .cs-menu-items>li.cs-show-submenu>a {
         color: #0c343d;
     }
 
-    .cs-menu.cs-menu-theme-2 .cs-menu-items > li.cs-has-submenu > a::after {
+    .cs-menu.cs-menu-theme-2 .cs-menu-items>li.cs-has-submenu>a::after {
         border-color: #ffffff;
     }
 
-    .cs-menu.cs-menu-theme-2 .cs-menu-items > li.cs-has-submenu.cs-show-submenu > a::after, .cs-menu.cs-menu-theme-2 .cs-menu-items > li:hover > a::after, .cs-menu.cs-menu-theme-2 .cs-menu-items > li.cs-is-active > a::after, .cs-menu.cs-menu-theme-1 .cs-menu-items > li:hover > a, .cs-menu.cs-menu-theme-1 .cs-menu-items > li.cs-show-submenu:hover > a, .cs-menu.cs-menu-theme-1 .cs-menu-items > li > a:focus, .cs-menu.cs-menu-theme-1 .cs-menu-items > li.cs-show-submenu > a, .cs-menu.cs-menu-theme-1 .cs-menu-items > li > a:hover .cs-menu.cs-menu-theme-1 .cs-menu-items > li.cs-is-active > a:hover, .cs-menu.cs-menu-theme-1 .cs-menu-items > li.cs-is-active > a:focus, .cs-menu.cs-menu-theme-1 .cs-menu-items > li.cs-is-active > a {
+    .cs-menu.cs-menu-theme-2 .cs-menu-items>li.cs-has-submenu.cs-show-submenu>a::after,
+    .cs-menu.cs-menu-theme-2 .cs-menu-items>li:hover>a::after,
+    .cs-menu.cs-menu-theme-2 .cs-menu-items>li.cs-is-active>a::after,
+    .cs-menu.cs-menu-theme-1 .cs-menu-items>li:hover>a,
+    .cs-menu.cs-menu-theme-1 .cs-menu-items>li.cs-show-submenu:hover>a,
+    .cs-menu.cs-menu-theme-1 .cs-menu-items>li>a:focus,
+    .cs-menu.cs-menu-theme-1 .cs-menu-items>li.cs-show-submenu>a,
+    .cs-menu.cs-menu-theme-1 .cs-menu-items>li>a:hover .cs-menu.cs-menu-theme-1 .cs-menu-items>li.cs-is-active>a:hover,
+    .cs-menu.cs-menu-theme-1 .cs-menu-items>li.cs-is-active>a:focus,
+    .cs-menu.cs-menu-theme-1 .cs-menu-items>li.cs-is-active>a {
         border-color: #0c343d;
     }
 
-    .cs-menu.cs-menu-theme-5 .cs-menu-items > li.cs-is-active.cs-has-submenu > a::after {
+    .cs-menu.cs-menu-theme-5 .cs-menu-items>li.cs-is-active.cs-has-submenu>a::after {
         border-bottom-color: #0c343d;
     }
 
-    .cs-menu.cs-menu-theme-3 .cs-menu-items > li > a:hover::before, .cs-menu.cs-menu-theme-3 .cs-submenu-items li::before {
+    .cs-menu.cs-menu-theme-3 .cs-menu-items>li>a:hover::before,
+    .cs-menu.cs-menu-theme-3 .cs-submenu-items li::before {
         background: #ffffff;
     }
 
-    .cs-menu.cs-menu-theme-3 .cs-submenu-items, .cs-menu.cs-menu-theme-2 .cs-submenu-items, .cs-menu.cs-menu-theme-7 .cs-submenu-items {
+    .cs-menu.cs-menu-theme-3 .cs-submenu-items,
+    .cs-menu.cs-menu-theme-2 .cs-submenu-items,
+    .cs-menu.cs-menu-theme-7 .cs-submenu-items {
         background: rgba(255, 255, 255, 0);
     }
 
-    .cs-menu.cs-menu-theme-4 .cs-menu-items > li:hover > a, .cs-menu.cs-menu-theme-4 .cs-menu-items > li > a:hover, .cs-menu.cs-menu-theme-4 .cs-menu-items > li > a:focus, .cs-menu.cs-menu-theme-4 .cs-menu-items > li.cs-is-active > a, .cs-menu.cs-menu-theme-4 .cs-menu-items > li.cs-show-submenu > a, .cs-menu.cs-menu-theme-5 .cs-menu-items > li:hover > a, .cs-menu.cs-menu-theme-5 .cs-menu-items > li a:focus, .cs-menu.cs-menu-theme-5 .cs-menu-items > li.cs-is-active > a, .cs-menu.cs-menu-theme-5 .cs-menu-items > li.cs-show-submenu > a {
+    .cs-menu.cs-menu-theme-4 .cs-menu-items>li:hover>a,
+    .cs-menu.cs-menu-theme-4 .cs-menu-items>li>a:hover,
+    .cs-menu.cs-menu-theme-4 .cs-menu-items>li>a:focus,
+    .cs-menu.cs-menu-theme-4 .cs-menu-items>li.cs-is-active>a,
+    .cs-menu.cs-menu-theme-4 .cs-menu-items>li.cs-show-submenu>a,
+    .cs-menu.cs-menu-theme-5 .cs-menu-items>li:hover>a,
+    .cs-menu.cs-menu-theme-5 .cs-menu-items>li a:focus,
+    .cs-menu.cs-menu-theme-5 .cs-menu-items>li.cs-is-active>a,
+    .cs-menu.cs-menu-theme-5 .cs-menu-items>li.cs-show-submenu>a {
         background: rgba(255, 255, 255, 0);
         color: #0c343d;
     }
@@ -4838,74 +5294,82 @@ body {
         background: rgba(255, 255, 255, 0);
     }
 
-    .cs-menu.cs-menu-theme-5 .cs-menu-items li.cs-has-submenu > a::after {
+    .cs-menu.cs-menu-theme-5 .cs-menu-items li.cs-has-submenu>a::after {
         border-bottom-color: #ffffff;
     }
 
-    .cs-menu.cs-menu-theme-5 .cs-menu-items > li:hover.cs-has-submenu > a::after, .cs-menu.cs-menu-theme-5 .cs-menu-items > li.cs-has-submenu.cs-show-submenu > a::after {
+    .cs-menu.cs-menu-theme-5 .cs-menu-items>li:hover.cs-has-submenu>a::after,
+    .cs-menu.cs-menu-theme-5 .cs-menu-items>li.cs-has-submenu.cs-show-submenu>a::after {
         border-bottom-color: #0c343d;
     }
 
-    .cs-menu.cs-menu-theme-4 .cs-submenu-items, .cs-menu.cs-menu-theme-9 .cs-submenu-items, .cs-menu.cs-menu-theme-6 .cs-menu-items, .cs-menu.cs-menu-theme-7 .cs-menu-items, .cs-menu.cs-menu-theme-8 .cs-menu-items, .cs-menu.cs-menu-theme-8 .cs-menu-items .cs-submenu-items, .cs-menu.cs-menu-theme-3 .cs-menu-items > li > a::before, .cs-menu.cs-menu-theme-3 .cs-menu-items > li > a::after {
+    .cs-menu.cs-menu-theme-4 .cs-submenu-items,
+    .cs-menu.cs-menu-theme-9 .cs-submenu-items,
+    .cs-menu.cs-menu-theme-6 .cs-menu-items,
+    .cs-menu.cs-menu-theme-7 .cs-menu-items,
+    .cs-menu.cs-menu-theme-8 .cs-menu-items,
+    .cs-menu.cs-menu-theme-8 .cs-menu-items .cs-submenu-items,
+    .cs-menu.cs-menu-theme-3 .cs-menu-items>li>a::before,
+    .cs-menu.cs-menu-theme-3 .cs-menu-items>li>a::after {
         background: rgba(255, 255, 255, 0);
     }
 
-    .cs-menu.cs-menu-theme-8 .cs-menu-items > li > a::before {
+    .cs-menu.cs-menu-theme-8 .cs-menu-items>li>a::before {
         border-top-color: rgba(255, 255, 255, 0);
     }
 
     .cs-menu-vertical.cs-menu-theme-3 .cs-menu-items::before {
         background: {
-            {
+                {
                 navAttr.navBackground
             }
-        
+
         }
     }
-    
 
 
-.cs-section[id="966e8216-3412-49e2-95f7-5b78bd0ece7d"] {
-    min-height: 122.71700000000001px;
-}
 
-.cs-section[id="966e8216-3412-49e2-95f7-5b78bd0ece7d"] .cs-section-inner {
-    min-height: 122.71700000000001px;
-    background-color: transparent;
-    background-image: url(https://yata-apix-f6c70563-e882-4027-b948-58995e473905.s3-object.locaweb.com.br/06350d41f9844144bdcf8710aa36050d.jpg);
-    background-size: auto auto;
-    background-repeat: repeat;
-    background-position: center top;
-}
+    .cs-section[id="966e8216-3412-49e2-95f7-5b78bd0ece7d"] {
+        min-height: 122.71700000000001px;
+    }
 
-.cs-section[id="6fbfce54-aca5-424e-96b5-928723433db9"] {
-    min-height: 142px;
-}
+    .cs-section[id="966e8216-3412-49e2-95f7-5b78bd0ece7d"] .cs-section-inner {
+        min-height: 122.71700000000001px;
+        background-color: transparent;
+        background-image: url(https://yata-apix-f6c70563-e882-4027-b948-58995e473905.s3-object.locaweb.com.br/06350d41f9844144bdcf8710aa36050d.jpg);
+        background-size: auto auto;
+        background-repeat: repeat;
+        background-position: center top;
+    }
 
-.cs-section[id="6fbfce54-aca5-424e-96b5-928723433db9"] .cs-section-inner {
-    min-height: 142px;
-    background-color: #d9d9d9;
-}
+    .cs-section[id="6fbfce54-aca5-424e-96b5-928723433db9"] {
+        min-height: 142px;
+    }
 
-.cs-box[id="322d41f7-7bdc-4383-bf78-31ee7b2633b2"] {
-    flex-grow: 1;
-}
+    .cs-section[id="6fbfce54-aca5-424e-96b5-928723433db9"] .cs-section-inner {
+        min-height: 142px;
+        background-color: #d9d9d9;
+    }
 
-.cs-widget[id="933d7e28-67e6-4d41-adb3-54b7fed7830e"] .cs-button {
-    background: #2b737a;
-    color: #ffffff;
-    fill: #ffffff;
-}
+    .cs-box[id="322d41f7-7bdc-4383-bf78-31ee7b2633b2"] {
+        flex-grow: 1;
+    }
 
-.cs-widget[id="933d7e28-67e6-4d41-adb3-54b7fed7830e"] .cs-cart-badge {
-    color: #2b737a;
-    background: #ffffff;
-}
+    .cs-widget[id="933d7e28-67e6-4d41-adb3-54b7fed7830e"] .cs-button {
+        background: #2b737a;
+        color: #ffffff;
+        fill: #ffffff;
+    }
 
-.cs-widget[id="933d7e28-67e6-4d41-adb3-54b7fed7830e"] {
-    background-color: transparent;
-}
+    .cs-widget[id="933d7e28-67e6-4d41-adb3-54b7fed7830e"] .cs-cart-badge {
+        color: #2b737a;
+        background: #ffffff;
+    }
 
-.cs-widget[id="98144282-4c79-47b6-b77a-9dab751c53b5"] {
-    background-color: transparent;
-}
+    .cs-widget[id="933d7e28-67e6-4d41-adb3-54b7fed7830e"] {
+        background-color: transparent;
+    }
+
+    .cs-widget[id="98144282-4c79-47b6-b77a-9dab751c53b5"] {
+        background-color: transparent;
+    }

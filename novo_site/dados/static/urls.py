@@ -22,7 +22,7 @@ from django.contrib import admin
 
 
 
-#from novo_site.dados import views
+
 from .views.dados  import *
 
 dados_patterns = [
@@ -32,11 +32,8 @@ dados_patterns = [
     path("Salvo/",SAlvo,name="SAlvo"),
     path("emprodu/",emprodu,name="emprodu"),
     path("teste/",teste,name="teste"),
-    path("cadastro/<str:cpf>",cadastro_cliente2,name="cadastro"),
     path("insert/",adciona_automatico,name="adciona"),
-    path("adciona_cli/",adcinona_cliente,name="adciona_cli"),
-    path("pesquisa_cpf/",pesquisa_cpf,name="pesquisa-cpf"),
-    path('endereco/<str:cpf>', pedido_end, name='endereco'), 
+    path("adciona_cli/",adcinona_cliente,name="adciona_cli")
 ]
 urlpatterns = [
     path('', home, name='inicio'),
